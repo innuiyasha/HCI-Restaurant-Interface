@@ -1,2 +1,14 @@
 \\CS-fs01\Profiles\ug\sblamb\Documents\CPSC481\Denu\Denu\bin\Debug\Denu.exe.config
 U:\481deninterface\CPSC481\Denu\Denu\bin\Debug\Denu.exe.config
+U:\481deninterface\CPSC481\Denu\Denu\bin\Debug\Denu.exe
+U:\481deninterface\CPSC481\Denu\Denu\bin\Debug\Denu.pdb
+U:\481deninterface\CPSC481\Denu\Denu\obj\Debug\Denu.csprojResolveAssemblyReference.cache
+U:\481deninterface\CPSC481\Denu\Denu\obj\Debug\MainWindow.baml
+U:\481deninterface\CPSC481\Denu\Denu\obj\Debug\MainWindow.g.cs
+U:\481deninterface\CPSC481\Denu\Denu\obj\Debug\App.g.cs
+U:\481deninterface\CPSC481\Denu\Denu\obj\Debug\Denu_MarkupCompile.cache
+U:\481deninterface\CPSC481\Denu\Denu\obj\Debug\Denu.g.resources
+U:\481deninterface\CPSC481\Denu\Denu\obj\Debug\Denu.Properties.Resources.resources
+U:\481deninterface\CPSC481\Denu\Denu\obj\Debug\Denu.csproj.GenerateResource.Cache
+U:\481deninterface\CPSC481\Denu\Denu\obj\Debug\Denu.exe
+U:\481deninterface\CPSC481\Denu\Denu\obj\Debug\Denu.pdb

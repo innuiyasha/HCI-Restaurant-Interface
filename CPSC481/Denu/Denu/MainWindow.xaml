@@ -1,17 +1,24 @@
 ﻿<Window x:Name="MainDenu" x:Class="Denu.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="1080" Width="1920">
-    <Grid>
+        Title="MainWindow" Height="1080" Width="1920" ShowInTaskbar="False">
+    <Grid x:Name="primeGrd">
         <Grid.RowDefinitions>
             <RowDefinition Height="75"/>
-            <RowDefinition Height="545*"/>
-            <RowDefinition Height="429*"/>
+            <RowDefinition Height="314*"/>
+            <RowDefinition Height="173*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition Width="640"/>
+            <ColumnDefinition x:Name="menuColumn"/>
         </Grid.ColumnDefinitions>
+        <TextBox x:Name="menuTxt" Margin="540,4,0,0" TextWrapping="Wrap" Text="Menu" FontSize="60" FontWeight="Bold" FontFamily="Cambria" IsTabStop="False" AllowDrop="False" IsReadOnly="True" IsUndoEnabled="False" HorizontalContentAlignment="Center" BorderBrush="{x:Null}" SelectionBrush="{x:Null}" Cursor="Arrow" BorderThickness="0" Focusable="False" IsHitTestVisible="False" Height="65" VerticalAlignment="Top" HorizontalAlignment="Left" Width="200"/>
+        <Grid x:Name="foodGrd" Grid.Row="1" ScrollViewer.CanContentScroll="True" Margin="0,0,640,0"/>
+        <Grid x:Name="drinkGrd" Grid.Row="1" Margin="0,0,640,0">
+            <Grid x:Name="highballGrd" HorizontalAlignment="Left" Height="100" Margin="10,133,0,0" VerticalAlignment="Top" Width="1252"/>
+        </Grid>
+        <Button x:Name="foodBtn" Content="FOOD" Margin="390,0,0,0" BorderBrush="Black" Background="White" Grid.Row="1" FontFamily="Cambria" FontSize="35" FontWeight="Bold" VerticalContentAlignment="Center" Padding="0" HorizontalAlignment="Left" Width="250" Height="40" VerticalAlignment="Top"/>
+        <Button x:Name="drinkBtn" Content="DRINKS" Margin="640,0,0,0" BorderBrush="Black" Background="White" Grid.Row="1" FontSize="35" FontFamily="Cambria" FontWeight="Bold" Padding="0" VerticalContentAlignment="Center" HorizontalAlignment="Left" Width="250" Height="40" VerticalAlignment="Top"/>
+        <TextBox x:Name="pendTxt" Margin="1370,0,98,0" TextWrapping="Wrap" Text="Pending Orders" AllowDrop="False" Focusable="False" IsHitTestVisible="False" IsTabStop="False" FontFamily="Cambria" FontSize="60" FontWeight="Bold" TextAlignment="Center" SelectionBrush="{x:Null}" BorderBrush="{x:Null}"/>
 
     </Grid>
 </Window>
