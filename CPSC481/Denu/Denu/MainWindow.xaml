@@ -1,0 +1,17 @@
+﻿<Window x:Name="MainDenu" x:Class="Denu.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="1080" Width="1920">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="545*"/>
+            <RowDefinition Height="429*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="640"/>
+        </Grid.ColumnDefinitions>
+
+    </Grid>
+</Window>

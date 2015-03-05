@@ -1,0 +1,2 @@
+\\CS-fs01\Profiles\ug\sblamb\Documents\CPSC481\Denu\Denu\bin\Debug\Denu.exe.config
+U:\481deninterface\CPSC481\Denu\Denu\bin\Debug\Denu.exe.config
