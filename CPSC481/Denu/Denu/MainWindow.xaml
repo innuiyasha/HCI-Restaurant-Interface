@@ -12,6 +12,7 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition x:Name="menuColumn"/>
         </Grid.ColumnDefinitions>
+
         <Grid x:Name="billGrd" HorizontalAlignment="Left" Height="1052" Margin="1272,0,0,0" VerticalAlignment="Top" Width="642" Grid.RowSpan="3">
             <Grid.RowDefinitions>
                 <RowDefinition Height="131*"/>
@@ -92,6 +93,19 @@
             <Button x:Name="callBtn" Content="Call Server" HorizontalAlignment="Left" Margin="25,12.5,0,0" VerticalAlignment="Top" Width="200" BorderBrush="Black" Background="White" FontFamily="Cambria" Height="50" FontSize="35" FontWeight="Bold" d:IsLocked="True"/>
         </Grid>
         <Border x:Name="mainSeparator" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="1" Margin="10,629,0,0" VerticalAlignment="Top" Width="1252" Grid.Row="1" d:IsLocked="True"/>
-
+        <Grid x:Name="welcomeGrd" HorizontalAlignment="Left" Height="1052" Grid.RowSpan="3" VerticalAlignment="Top" Width="1914" Margin="0,0,0,-1" Background="White">
+            <Image Margin="0,665,1220,0" Source="bug-overlay.png" Stretch="Fill"/>
+            <Image Margin="1539,627,10,10" Source="UofCCoat.svg.png" Stretch="Fill"/>
+            <Button x:Name="begginBtn" Content="Begin" Margin="684,429" FontSize="100" Background="#FFD69536"/>
+            <TextBlock HorizontalAlignment="Center" Margin="414,69,397,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="355" Width="1103" FontSize="75"><Run Text="Welcome to The Den's electronic ordering system! "/><LineBreak/><Run Text="Press the button below to begin."/></TextBlock>
+        </Grid>
+        <Grid x:Name="confirmGrd" HorizontalAlignment="Left" Height="316" Margin="612,247,0,0" Grid.Row="1" VerticalAlignment="Top" Width="709" d:IsHidden="True">
+            <Grid.Background>
+                <SolidColorBrush Color="White" Opacity="0.6"/>
+            </Grid.Background>
+            <Button x:Name="yesBtn" Content="Confirm" HorizontalAlignment="Left" Margin="10,129,0,0" VerticalAlignment="Top" Width="324" Height="113" FontSize="80"/>
+            <Button x:Name="noBtn" Content="Cancel" HorizontalAlignment="Left" Margin="375,129,0,0" VerticalAlignment="Top" Width="324" Height="113" FontSize="80"/>
+            <TextBlock x:Name="sureTxt" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Are you sure?" VerticalAlignment="Top" Height="114" Width="689" FontSize="75" TextAlignment="Center"/>
+        </Grid>
     </Grid>
 </Window>

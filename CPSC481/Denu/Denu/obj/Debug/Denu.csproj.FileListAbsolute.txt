@@ -24,5 +24,4 @@ C:\Users\Scott\Documents\Work\CPSC\481\481deninterface\CPSC481\Denu\Denu\obj\Deb
 C:\Users\Scott\Documents\Work\CPSC\481\481deninterface\CPSC481\Denu\Denu\obj\Debug\Denu.csproj.GenerateResource.Cache
 C:\Users\Scott\Documents\Work\CPSC\481\481deninterface\CPSC481\Denu\Denu\obj\Debug\Denu.exe
 C:\Users\Scott\Documents\Work\CPSC\481\481deninterface\CPSC481\Denu\Denu\obj\Debug\Denu.pdb
-C:\Users\Scott\Documents\Work\CPSC\481\481deninterface\CPSC481\Denu\Denu\bin\Debug\Denu.exe.CodeAnalysisLog.xml
-C:\Users\Scott\Documents\Work\CPSC\481\481deninterface\CPSC481\Denu\Denu\bin\Debug\Denu.exe.lastcodeanalysissucceeded
+C:\Users\Scott\Documents\Work\CPSC\481\481deninterface\CPSC481\Denu\Denu\obj\Debug\Denu.csprojResolveAssemblyReference.cache
