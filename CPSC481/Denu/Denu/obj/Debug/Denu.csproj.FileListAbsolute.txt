@@ -25,3 +25,6 @@ C:\Users\Scott\Documents\Work\CPSC\481\481deninterface\CPSC481\Denu\Denu\obj\Deb
 C:\Users\Scott\Documents\Work\CPSC\481\481deninterface\CPSC481\Denu\Denu\obj\Debug\Denu.g.resources
 C:\Users\Scott\Documents\Work\CPSC\481\481deninterface\CPSC481\Denu\Denu\obj\Debug\Denu.Properties.Resources.resources
 C:\Users\Scott\Documents\Work\CPSC\481\481deninterface\CPSC481\Denu\Denu\obj\Debug\Denu.csproj.GenerateResource.Cache
+C:\Users\Spencer\Source\Repos\481deninterface\CPSC481\Denu\Denu\bin\Debug\Denu.exe.config
+C:\Users\Spencer\Source\Repos\481deninterface\CPSC481\Denu\Denu\obj\Debug\Denu.exe
+C:\Users\Spencer\Source\Repos\481deninterface\CPSC481\Denu\Denu\obj\Debug\Denu.pdb
