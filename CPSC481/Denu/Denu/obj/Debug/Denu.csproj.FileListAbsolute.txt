@@ -12,3 +12,16 @@ U:\481deninterface\CPSC481\Denu\Denu\obj\Debug\Denu.Properties.Resources.resourc
 U:\481deninterface\CPSC481\Denu\Denu\obj\Debug\Denu.csproj.GenerateResource.Cache
 U:\481deninterface\CPSC481\Denu\Denu\obj\Debug\Denu.exe
 U:\481deninterface\CPSC481\Denu\Denu\obj\Debug\Denu.pdb
+C:\Users\Scott\Documents\Work\CPSC\481\481deninterface\CPSC481\Denu\Denu\bin\Debug\Denu.exe.config
+C:\Users\Scott\Documents\Work\CPSC\481\481deninterface\CPSC481\Denu\Denu\obj\Debug\Denu.exe
+C:\Users\Scott\Documents\Work\CPSC\481\481deninterface\CPSC481\Denu\Denu\obj\Debug\Denu.pdb
+C:\Users\Scott\Documents\Work\CPSC\481\481deninterface\CPSC481\Denu\Denu\bin\Debug\Denu.exe
+C:\Users\Scott\Documents\Work\CPSC\481\481deninterface\CPSC481\Denu\Denu\bin\Debug\Denu.pdb
+C:\Users\Scott\Documents\Work\CPSC\481\481deninterface\CPSC481\Denu\Denu\obj\Debug\Denu.csprojResolveAssemblyReference.cache
+C:\Users\Scott\Documents\Work\CPSC\481\481deninterface\CPSC481\Denu\Denu\obj\Debug\MainWindow.baml
+C:\Users\Scott\Documents\Work\CPSC\481\481deninterface\CPSC481\Denu\Denu\obj\Debug\MainWindow.g.cs
+C:\Users\Scott\Documents\Work\CPSC\481\481deninterface\CPSC481\Denu\Denu\obj\Debug\App.g.cs
+C:\Users\Scott\Documents\Work\CPSC\481\481deninterface\CPSC481\Denu\Denu\obj\Debug\Denu_MarkupCompile.cache
+C:\Users\Scott\Documents\Work\CPSC\481\481deninterface\CPSC481\Denu\Denu\obj\Debug\Denu.g.resources
+C:\Users\Scott\Documents\Work\CPSC\481\481deninterface\CPSC481\Denu\Denu\obj\Debug\Denu.Properties.Resources.resources
+C:\Users\Scott\Documents\Work\CPSC\481\481deninterface\CPSC481\Denu\Denu\obj\Debug\Denu.csproj.GenerateResource.Cache
