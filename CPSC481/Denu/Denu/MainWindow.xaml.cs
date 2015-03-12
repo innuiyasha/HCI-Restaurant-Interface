@@ -33,17 +33,29 @@ namespace Denu
         private void cancel(object sender, RoutedEventArgs e)
         {
             confirmGrd.Visibility = Visibility.Hidden;
+            dialogGrid.Visibility = Visibility.Hidden;
         }
 
         private void confirmCall(object sender, RoutedEventArgs e)
         {
             sureTxt.Text = "Are you sure you want to call the server?";
             confirmGrd.Visibility = Visibility.Visible;
+            dialogGrid.Visibility = Visibility.Visible;
         }
 
         private void confirm(object sender, RoutedEventArgs e)
         {
-            confirmGrd.Visibility = Visibility.Hidden;
+            if (sureTxt.Text.Equals("Are you sure you want to checkout?")){
+                sureTxt.Text = "Your waiter will be with you shortly!";
+                yesBtn.Visibility = Visibility.Hidden;
+                noBtn.Visibility = Visibility.Hidden;
+                okBtn.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                confirmGrd.Visibility = Visibility.Hidden;
+                dialogGrid.Visibility = Visibility.Hidden;
+            }
             //trigger activation of stuff
         }
 
@@ -51,6 +63,7 @@ namespace Denu
         {
             sureTxt.Text = "Are you sure you want to checkout?";
             confirmGrd.Visibility = Visibility.Visible;
+            dialogGrid.Visibility = Visibility.Visible;
         }
 
         private void foodMenu(object sender, RoutedEventArgs e)
@@ -69,6 +82,55 @@ namespace Denu
         {
             sureTxt.Text = "Has everyone placed their order?";
             confirmGrd.Visibility = Visibility.Visible;
+            dialogGrid.Visibility = Visibility.Visible;
+        }
+
+        private void orderItem1(object sender, MouseButtonEventArgs e)
+        {
+            checkImg1.Visibility = Visibility.Hidden;
+            pendImg1.Visibility = Visibility.Visible;
+        }
+
+        private void hb1Press(object sender, MouseButtonEventArgs e)
+        {
+            itemImg.Source = new BitmapImage(new Uri("FoodDrink/RumNCoke.jpg", UriKind.Relative));
+            priceLbl.Content = "Price: $7.99";
+            qtyPriceLbl.Content = "Total: $7.99";
+            itemLbl.Content = "Rum & Coke";
+        }
+
+        private void hb2Press(object sender, MouseButtonEventArgs e)
+        {
+            itemImg.Source = new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative));
+            priceLbl.Content = "Price: $7.99";
+            qtyPriceLbl.Content = "Total: $7.99";
+            itemLbl.Content = "Gin & Tonic";
+        }
+
+        private void addItem(object sender, RoutedEventArgs e)
+        {
+            if(!itemLbl.Content.Equals("")){
+                pendItem1Grd.Visibility = Visibility.Visible;
+            }
+        }
+
+        private void xPend1(object sender, MouseButtonEventArgs e)
+        {
+            pendItem1Grd.Visibility = Visibility.Hidden;
+        }
+
+        private void serveConfirm(object sender, MouseButtonEventArgs e)
+        {
+            pendItem1Grd.Visibility = Visibility.Hidden;
+            rcptItemGrd.Visibility = Visibility.Visible;
+            totalLbl.Content = "Total: $7.99";
+        }
+
+        private void reset(object sender, RoutedEventArgs e)
+        {
+            confirmGrd.Visibility = Visibility.Hidden;
+            dialogGrid.Visibility = Visibility.Hidden;
+            welcomeGrd.Visibility = Visibility.Visible;
         }
     }
 }

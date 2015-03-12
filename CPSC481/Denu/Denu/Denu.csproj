@@ -101,12 +101,33 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="cancel-icon.png" />
-    <Resource Include="gin-and-tonic.jpg" />
     <Resource Include="pending.png" />
-    <Resource Include="RumNCoke.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="checkmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="AllergyIcons\Controversial.png" />
+    <Resource Include="AllergyIcons\Corn.png" />
+    <Resource Include="AllergyIcons\Dairy.png" />
+    <Resource Include="AllergyIcons\Egg.png" />
+    <Resource Include="AllergyIcons\Fish.png" />
+    <Resource Include="AllergyIcons\Flavourings.png" />
+    <Resource Include="AllergyIcons\Gluten.png" />
+    <Resource Include="AllergyIcons\Meat.png" />
+    <Resource Include="AllergyIcons\MSG.png" />
+    <Resource Include="AllergyIcons\Nightshades.png" />
+    <Resource Include="AllergyIcons\Peanut.png" />
+    <Resource Include="AllergyIcons\Shellfish.png" />
+    <Resource Include="AllergyIcons\Soy.png" />
+    <Resource Include="AllergyIcons\Sulfites.png" />
+    <Resource Include="AllergyIcons\Transfat.png" />
+    <Resource Include="AllergyIcons\TreeNuts.png" />
+    <Resource Include="AllergyIcons\Wheat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="FoodDrink\gin-and-tonic.jpg" />
+    <Resource Include="FoodDrink\RumNCoke.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
