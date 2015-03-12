@@ -99,6 +99,15 @@
   <ItemGroup>
     <Resource Include="UofCCoat.svg.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="cancel-icon.png" />
+    <Resource Include="gin-and-tonic.jpg" />
+    <Resource Include="pending.png" />
+    <Resource Include="RumNCoke.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="checkmark.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

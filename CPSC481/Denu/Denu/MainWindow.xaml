@@ -13,48 +13,48 @@
             <ColumnDefinition x:Name="menuColumn"/>
         </Grid.ColumnDefinitions>
 
-        <Grid x:Name="billGrd" HorizontalAlignment="Left" Height="1052" Margin="1272,0,0,0" VerticalAlignment="Top" Width="642" Grid.RowSpan="3">
+        <Grid x:Name="billGrd" HorizontalAlignment="Left" Height="1052" Margin="1414,0,0,-1" VerticalAlignment="Top" Width="500" Grid.RowSpan="3">
             <Grid.RowDefinitions>
                 <RowDefinition Height="131*"/>
                 <RowDefinition x:Name="billSplit" Height="540"/>
             </Grid.RowDefinitions>
-            <Border x:Name="pendBrd" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="76" VerticalAlignment="Top" Width="642" d:IsLocked="True"/>
-            <Border x:Name="rcptBrd" BorderBrush="Black" BorderThickness="1" Margin="0,1,0,464" Height="75" Grid.Row="1" d:IsLocked="True"/>
-            <Border x:Name="billBrd" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="965" Margin="0,75,0,0" VerticalAlignment="Top" Width="642" Grid.RowSpan="2" d:IsLocked="True"/>
-            <TextBox x:Name="pendTxt" TextWrapping="Wrap" Text="Pending Orders" AllowDrop="False" Focusable="False" IsHitTestVisible="False" IsTabStop="False" FontFamily="Cambria" FontSize="60" FontWeight="Bold" TextAlignment="Center" SelectionBrush="{x:Null}" BorderBrush="{x:Null}" Height="75" VerticalAlignment="Top" IsReadOnly="True" IsUndoEnabled="False" d:IsLocked="True"/>
-            <Label x:Name="rcptLbl" Content="Receipt" Margin="217.5,0,0,0" Grid.Row="1" VerticalAlignment="Top" FontFamily="Cambria" FontWeight="Bold" FontSize="60" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" HorizontalAlignment="Left" FontStyle="Italic" d:IsLocked="True"/>
-            <Button x:Name="placeAllBtn" Content="Place All Orders" Background="White" BorderBrush="Black" FontSize="30" FontFamily="Cambria" FontWeight="Bold" Height="40" Margin="0,462,0,10" d:IsLocked="True"/>
-            <Button x:Name="chkoutBtn" Content="Checkout" FontFamily="Cambria" FontWeight="Bold" FontSize="30" Background="White" BorderBrush="Black" Margin="20,478,372,22" Height="40" Grid.Row="1" Width="250" d:IsLocked="True"/>
+            <Border x:Name="pendBrd" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="76" VerticalAlignment="Top" Width="500"/>
+            <Border x:Name="rcptBrd" BorderBrush="Black" BorderThickness="1" Margin="0,1,0,464" Height="75" Grid.Row="1"/>
+            <Border x:Name="billBrd" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="965" Margin="0,75,0,0" VerticalAlignment="Top" Width="500" Grid.RowSpan="2"/>
+            <TextBox x:Name="pendTxt" TextWrapping="Wrap" Text="Pending Orders" AllowDrop="False" Focusable="False" IsHitTestVisible="False" IsTabStop="False" FontFamily="Cambria" FontSize="60" FontWeight="Bold" TextAlignment="Center" SelectionBrush="{x:Null}" BorderBrush="{x:Null}" Height="75" VerticalAlignment="Top" IsReadOnly="True" IsUndoEnabled="False"/>
+            <Label x:Name="rcptLbl" Content="Receipt" Margin="155,0,46,0" Grid.Row="1" VerticalAlignment="Top" FontFamily="Cambria" FontWeight="Bold" FontSize="60" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" FontStyle="Italic" HorizontalAlignment="Left"/>
+            <Button x:Name="placeAllBtn" Content="Place All Orders" Background="White" BorderBrush="Black" FontSize="30" FontFamily="Cambria" FontWeight="Bold" Height="40" Margin="0,462,0,10" Click="confirmAll"/>
+            <Button x:Name="chkoutBtn" Content="Checkout" FontFamily="Cambria" FontWeight="Bold" FontSize="30" Background="White" BorderBrush="Black" Margin="20,478,230,22" Height="40" Grid.Row="1" Width="250" Click="checkout"/>
             <Grid x:Name="pendGrd" Margin="1,76,1,50">
-                <Border x:Name="verticalSeparator" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Margin="85,25,0,25" Width="1" d:IsLocked="True"/>
-                <Grid x:Name="pendItem1Grd" HorizontalAlignment="Left" Height="40" Margin="10,25,0,0" VerticalAlignment="Top" Width="620">
-                    <Button x:Name="place1Btn" Content="Place" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" FontFamily="Cambria" FontWeight="Bold" FontSize="24" Background="White" BorderBrush="Black"/>
+                <Border x:Name="verticalSeparator" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Margin="85,25,0,25" Width="1"/>
+                <Grid x:Name="pendItem1Grd" HorizontalAlignment="Left" Height="40" Margin="10,25,0,0" VerticalAlignment="Top" Width="478">
                     <Label x:Name="pendItemLbl" Content="Budweiser" HorizontalAlignment="Left" Margin="95,0,0,0" VerticalAlignment="Top" Height="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" FontFamily="Cambria" FontWeight="Bold" FontSize="24"/>
                     <Image x:Name="cancelImg1" Height="40" Margin="0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="40" Source="cancel-icon.png" Stretch="Fill"/>
+                    <Image x:Name="checkImg1" HorizontalAlignment="Left" Height="40" Margin="12.5,0,0,0" VerticalAlignment="Top" Width="40" Stretch="Fill" Source="checkmark.png"/>
                 </Grid>
-                <Grid x:Name="pendItem1Grd_Copy" HorizontalAlignment="Left" Height="40" Margin="10,75,0,0" VerticalAlignment="Top" Width="620">
+                <Grid x:Name="pendItem1Grd_Copy" HorizontalAlignment="Left" Height="40" Margin="10,75,0,0" VerticalAlignment="Top" Width="478">
                     <Image x:Name="pendImg2" HorizontalAlignment="Left" Height="40" Margin="12.5,0,0,0" VerticalAlignment="Top" Width="40" Source="pending.png"/>
                     <Label x:Name="pendItem2Lbl" Content="Heineken" HorizontalAlignment="Left" Margin="95,0,0,0" VerticalAlignment="Top" Height="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" FontFamily="Cambria" FontWeight="Bold" FontSize="24"/>
                     <Image x:Name="cancelImg2" Height="40" Margin="0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="40" Source="cancel-icon.png" Stretch="Fill"/>
                 </Grid>
             </Grid>
-            <Grid x:Name="rcptGrd" Margin="1,125,1,74" Grid.Row="1" d:IsLocked="True">
+            <Grid x:Name="rcptGrd" Margin="1,125,1,74" Grid.Row="1">
                 <Grid x:Name="rcptItemGrd" Height="35" Margin="20,10,50,0" VerticalAlignment="Top">
                     <Label x:Name="rcptItemTitleLbl" Content="The Expensive Cut" HorizontalAlignment="Left" VerticalAlignment="Top" Height="35" FontFamily="Cambria" FontWeight="Bold" FontSize="24" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="0"/>
-                    <Label x:Name="rcptItemPriceLbl" Content="$18.95" HorizontalAlignment="Left" Margin="466,0,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="0" Height="35" FontFamily="Cambria" FontSize="24" FontWeight="Bold"/>
+                    <Label x:Name="rcptItemPriceLbl" Content="$18.95" HorizontalAlignment="Left" Margin="353,0,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="0" Height="35" FontFamily="Cambria" FontSize="24" FontWeight="Bold"/>
                 </Grid>
             </Grid>
-            <Label x:Name="totalLbl" Content="Total: $18.95" FontFamily="Cambria" FontSize="30" FontWeight="Bold" Margin="390,476,52,24" Height="40" Grid.Row="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="200" d:IsLocked="True"/>
-            <Label x:Name="rcptItemLbl" Content="Item" HorizontalAlignment="Left" Margin="20,86,0,0" VerticalAlignment="Top" FontFamily="Cambria" FontSize="24" FontStyle="Italic" FontWeight="Bold" Grid.Row="1" d:IsLocked="True"/>
-            <Label x:Name="rcptPriceLbl" Content="Price" HorizontalAlignment="Left" Margin="482,86,0,0" VerticalAlignment="Top" FontFamily="Cambria" FontWeight="Bold" FontStyle="Italic" FontSize="24" Grid.Row="1" d:IsLocked="True"/>
-            <Border x:Name="separator" BorderBrush="Black" BorderThickness="1" Height="1" Margin="20,119,52,0" VerticalAlignment="Top" Grid.Row="1" d:IsLocked="True"/>
+            <Label x:Name="totalLbl" Content="Total: $18.95" FontFamily="Cambria" FontSize="30" FontWeight="Bold" Margin="275,475,25,25" Height="40" Grid.Row="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="200"/>
+            <Label x:Name="rcptItemLbl" Content="Item" HorizontalAlignment="Left" Margin="20,86,0,0" VerticalAlignment="Top" FontFamily="Cambria" FontSize="24" FontStyle="Italic" FontWeight="Bold" Grid.Row="1"/>
+            <Label x:Name="rcptPriceLbl" Content="Price" HorizontalAlignment="Left" Margin="388,86,0,0" VerticalAlignment="Top" FontFamily="Cambria" FontWeight="Bold" FontStyle="Italic" FontSize="24" Grid.Row="1"/>
+            <Border x:Name="separator" BorderBrush="Black" BorderThickness="1" Height="1" Margin="20,119,52,0" VerticalAlignment="Top" Grid.Row="1"/>
         </Grid>
-        <Grid x:Name="menuGrd" HorizontalAlignment="Left" Height="1052" VerticalAlignment="Top" Width="1272" Grid.RowSpan="3">
-            <Border x:Name="menuBrd" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="76" Margin="0" VerticalAlignment="Top" Width="1273" d:IsLocked="True"/>
+        <Grid x:Name="menuGrd" HorizontalAlignment="Left" Height="1052" VerticalAlignment="Top" Width="1414" Grid.RowSpan="3" Margin="0,0,0,-1">
+            <Border x:Name="menuBrd" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="76" Margin="0" VerticalAlignment="Top" Width="1415"/>
             <Grid x:Name="drinkGrd" Margin="0,115,0,346">
-                <Grid x:Name="highballGrd" HorizontalAlignment="Left" Height="200" Margin="0,25,0,0" VerticalAlignment="Top" Width="1272" d:IsLocked="True">
-                    <Label x:Name="highballLbl" Content="HIGHBALLS" Margin="551,0,246,0" VerticalAlignment="Top" FontFamily="Cambria" FontSize="35" FontWeight="Bold" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" ScrollViewer.VerticalScrollBarVisibility="Disabled" BorderThickness="0,1" BorderBrush="Black" d:IsLocked="True"/>
-                    <Grid x:Name="hbItemsGrd" HorizontalAlignment="Left" Height="142" Margin="10,48,0,0" VerticalAlignment="Top" Width="1252" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.HorizontalScrollBarVisibility="Visible" ClipToBounds="True" ScrollViewer.CanContentScroll="True">
+                <Grid x:Name="highballGrd" HorizontalAlignment="Left" Height="200" Margin="0,25,0,0" VerticalAlignment="Top" Width="1414">
+                    <Label x:Name="highballLbl" Content="HIGHBALLS" Margin="613.5,0,246,0" VerticalAlignment="Top" FontFamily="Cambria" FontSize="35" FontWeight="Bold" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" ScrollViewer.VerticalScrollBarVisibility="Disabled" BorderThickness="0,1" BorderBrush="Black"/>
+                    <Grid x:Name="hbItemsGrd" HorizontalAlignment="Left" Height="142" Margin="10,48,0,0" VerticalAlignment="Top" Width="1394" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.HorizontalScrollBarVisibility="Visible" ClipToBounds="True" ScrollViewer.CanContentScroll="True">
                         <Label x:Name="hbItem1Lbl" Content="Rum &amp; Coke" HorizontalAlignment="Left" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" FontFamily="Cambria" FontWeight="Bold" FontSize="34" Margin="0,44,0,0" BorderThickness="1,0" BorderBrush="Black"/>
                         <Label x:Name="hbItem2Lbl" Content="Gin &amp; Tonic" HorizontalAlignment="Left" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" FontFamily="Cambria" FontWeight="Bold" FontSize="34" Margin="210,44,0,0" BorderBrush="Black" BorderThickness="1,0"/>
                         <Label x:Name="hbItem3Lbl" Content="Highball 3" HorizontalAlignment="Left" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" FontFamily="Cambria" FontWeight="Bold" FontSize="34" Margin="410,44,0,0" BorderBrush="Black" BorderThickness="1,0"/>
@@ -63,49 +63,51 @@
                         <Label x:Name="hbItem6Lbl" Content="Highball 6" HorizontalAlignment="Left" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" FontFamily="Cambria" FontWeight="Bold" FontSize="34" Margin="1177,44,-87,0" BorderBrush="Black" BorderThickness="1,0" ScrollViewer.VerticalScrollBarVisibility="Disabled"/>
                     </Grid>
                 </Grid>
-                <Grid x:Name="beerGrd" HorizontalAlignment="Left" Height="200" Margin="0,225,0,0" VerticalAlignment="Top" Width="1272" d:IsLocked="True">
-                    <Label x:Name="beerLbl" Content="BEER" Margin="593,0,246,0" VerticalAlignment="Top" FontFamily="Cambria" FontSize="35" FontWeight="Bold" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" ScrollViewer.VerticalScrollBarVisibility="Disabled" BorderBrush="Black" BorderThickness="0,1" d:IsLocked="True"/>
-                    <Grid x:Name="beerItemsGrd" HorizontalAlignment="Left" Height="142" Margin="10,48,0,0" VerticalAlignment="Top" Width="1252"/>
+                <Grid x:Name="beerGrd" HorizontalAlignment="Left" Height="200" Margin="0,225,0,0" VerticalAlignment="Top" Width="1414">
+                    <Label x:Name="beerLbl" Content="BEER" Margin="664,0,246,0" VerticalAlignment="Top" FontFamily="Cambria" FontSize="35" FontWeight="Bold" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" ScrollViewer.VerticalScrollBarVisibility="Disabled" BorderBrush="Black" BorderThickness="0,1"/>
+                    <Grid x:Name="beerItemsGrd" HorizontalAlignment="Left" Height="142" Margin="10,48,0,0" VerticalAlignment="Top" Width="1394"/>
                 </Grid>
             </Grid>
-            <Button x:Name="drinkBtn" Content="DRINKS" Margin="640,75,0,0" BorderBrush="Black" Background="White" FontSize="35" FontFamily="Cambria" FontWeight="Bold" Padding="0,-3,0,0" VerticalContentAlignment="Center" HorizontalAlignment="Left" Width="350" Height="40" VerticalAlignment="Top" d:IsLocked="True"/>
-            <Button x:Name="foodBtn" Content="FOOD" Margin="291,75,0,0" BorderBrush="Black" Background="White" FontFamily="Cambria" FontSize="35" FontWeight="Bold" VerticalContentAlignment="Center" Padding="0,-3,0,0" HorizontalAlignment="Left" Width="350" Height="40" VerticalAlignment="Top" d:IsLocked="True"/>
+            <Button x:Name="drinkBtn" Content="DRINKS" Margin="706,75,0,0" BorderBrush="Black" Background="White" FontSize="35" FontFamily="Cambria" FontWeight="Bold" Padding="0,-3,0,0" VerticalContentAlignment="Center" HorizontalAlignment="Left" Width="350" Height="40" VerticalAlignment="Top" Click="drinkMenu"/>
+            <Button x:Name="foodBtn" Content="FOOD" Margin="357,75,0,0" BorderBrush="Black" Background="White" FontFamily="Cambria" FontSize="35" FontWeight="Bold" VerticalContentAlignment="Center" Padding="0,-3,0,0" HorizontalAlignment="Left" Width="350" Height="40" VerticalAlignment="Top" Click="foodMenu"/>
             <Grid x:Name="foodGrd" ScrollViewer.CanContentScroll="True" Margin="0,115,0,346" d:IsHidden="True"/>
-            <TextBox x:Name="menuTxt" Margin="540,0,0,0" TextWrapping="Wrap" Text="Menu" FontSize="60" FontWeight="Bold" FontFamily="Cambria" IsTabStop="False" AllowDrop="False" IsReadOnly="True" IsUndoEnabled="False" HorizontalContentAlignment="Center" BorderBrush="{x:Null}" SelectionBrush="{x:Null}" Cursor="Arrow" BorderThickness="0" Focusable="False" IsHitTestVisible="False" Height="75" VerticalAlignment="Top" HorizontalAlignment="Left" Width="200" Background="{x:Null}" d:IsLocked="True"/>
+            <TextBox x:Name="menuTxt" Margin="607,0,0,0" TextWrapping="Wrap" Text="Menu" FontSize="60" FontWeight="Bold" FontFamily="Cambria" IsTabStop="False" AllowDrop="False" IsReadOnly="True" IsUndoEnabled="False" HorizontalContentAlignment="Center" BorderBrush="{x:Null}" SelectionBrush="{x:Null}" Cursor="Arrow" BorderThickness="0" Focusable="False" IsHitTestVisible="False" Height="75" VerticalAlignment="Top" HorizontalAlignment="Left" Width="200" Background="{x:Null}"/>
             <Grid x:Name="itemGrd" Margin="0,704,0,0">
-                <Image x:Name="itemImg" HorizontalAlignment="Left" Height="175" Margin="120,25,0,0" VerticalAlignment="Top" Width="175" Source="gin-and-tonic.jpg" Stretch="Fill"/>
-                <Border x:Name="imageBrd" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="177" Margin="119,24,0,0" VerticalAlignment="Top" Width="177"/>
-                <Label x:Name="itemLbl" Content="Salisbury Steak" HorizontalAlignment="Left" Margin="10,0,0,25" FontSize="40" FontFamily="Cambria" FontWeight="Bold" Height="60" VerticalAlignment="Bottom" HorizontalContentAlignment="Center" Width="400" ScrollViewer.VerticalScrollBarVisibility="Disabled"/>
-                <Grid x:Name="detailGrd" HorizontalAlignment="Left" Margin="415,10,0,0" Width="847" Height="326" VerticalAlignment="Top">
-                    <Border x:Name="detailBrd" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="326" VerticalAlignment="Top" Width="847"/>
-                    <Button x:Name="descBtn" Content="Description" HorizontalAlignment="Left" VerticalAlignment="Top" Width="282.3" Background="{x:Null}" BorderBrush="Black" Height="40" FontFamily="Cambria" FontSize="30" FontWeight="Bold"/>
-                    <Button x:Name="ingredBtn" Content="Ingredients" HorizontalAlignment="Left" VerticalAlignment="Top" Width="283" Background="{x:Null}" BorderBrush="Black" Height="40" FontFamily="Cambria" FontSize="30" FontWeight="Bold" Margin="282,0,0,0"/>
-                    <Button x:Name="nutritBtn" Content="Nutrition Facts" HorizontalAlignment="Left" VerticalAlignment="Top" Width="282" Background="{x:Null}" BorderBrush="Black" Height="40" FontFamily="Cambria" FontSize="30" FontWeight="Bold" Margin="565,0,0,0"/>
-                    <TextBox x:Name="descTxt" HorizontalAlignment="Left" Margin="0,0,0,60" TextWrapping="Wrap" Text="Here's a very long sentence that I've made to try and test his label out. Hopefully, it can be long enough to fill a good portion of the space so I can see how this looks." Width="847" Height="226" VerticalAlignment="Bottom" Padding="25,25,25,1" ScrollViewer.CanContentScroll="True" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Center" FontSize="24" FontFamily="Cambria" AllowDrop="False" Focusable="False" BorderThickness="0" Cursor="Arrow" UndoLimit="0" Background="{x:Null}" BorderBrush="{x:Null}"/>
-                    <Button x:Name="addBtn" Content="Add to Order" BorderBrush="Black" Height="40" Margin="53.5,0,0,10" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontFamily="Cambria" FontSize="30" FontWeight="Bold" Background="White" Width="250"/>
-                    <Button x:Name="decrementBtn" Content="-" Width="40" Height="40" Margin="357,0,450,10" Background="White" BorderBrush="Black" FontFamily="Cambria" FontSize="60" VerticalContentAlignment="Center" Padding="1,-22,1,0" VerticalAlignment="Bottom"/>
-                    <Button x:Name="incrementBtn" Content="+" Margin="450,276,357,10" FontFamily="Cambria" Width="40" Height="40" Background="White" BorderBrush="Black" FontSize="55" Padding="1,-20,1,0"/>
-                    <Label x:Name="qtyLbl" Content="99" HorizontalAlignment="Left" Margin="396,0,0,10" VerticalAlignment="Bottom" Height="40" FontFamily="Cambria" FontWeight="Bold" FontSize="30" HorizontalContentAlignment="Center" Padding="0" Width="55" BorderThickness="1" BorderBrush="Black" ScrollViewer.VerticalScrollBarVisibility="Disabled" VerticalContentAlignment="Center"/>
-                    <Label x:Name="qtyPriceLbl" Content="Total: $1,979.01" Margin="0,0,53.5,12" FontFamily="Cambria" FontWeight="Bold" FontSize="30" VerticalAlignment="Bottom" Width="250" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" HorizontalAlignment="Right"/>
+                <Border x:Name="imageBrd" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="177" Margin="119,49,0,0" VerticalAlignment="Top" Width="177">
+                    <Image x:Name="itemImg" HorizontalAlignment="Left" Height="175" VerticalAlignment="Top" Width="175" Source="gin-and-tonic.jpg" Stretch="Fill" Margin="0,0,0,-0.2"/>
+                </Border>
+                <Label x:Name="itemLbl" Content="Gin &amp; Tonic" HorizontalAlignment="Left" Margin="10,0,0,12" FontSize="40" FontFamily="Cambria" FontWeight="Bold" Height="60" VerticalAlignment="Bottom" HorizontalContentAlignment="Center" Width="400" ScrollViewer.VerticalScrollBarVisibility="Disabled"/>
+                <Grid x:Name="detailGrd" HorizontalAlignment="Left" Margin="488.5,49,0,0" Width="847" Height="287" VerticalAlignment="Top">
+                    <Border x:Name="detailBrd" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="287" VerticalAlignment="Top" Width="847"/>
+                    <TextBox x:Name="descTxt" HorizontalAlignment="Left" Margin="0,0,0,60" TextWrapping="Wrap" Text="Here's a very long sentence that I've made to try and test his label out. Hopefully, it can be long enough to fill a good portion of the space so I can see how this looks." Width="847" Height="149" VerticalAlignment="Bottom" Padding="25,25,25,1" ScrollViewer.CanContentScroll="True" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Center" FontSize="24" FontFamily="Cambria" AllowDrop="False" Focusable="False" BorderThickness="0" Cursor="Arrow" UndoLimit="0" Background="{x:Null}" BorderBrush="{x:Null}"/>
+                    <Button x:Name="addBtn" Content="Add to Order" BorderBrush="Black" Height="40" Margin="54,0,0,12" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontFamily="Cambria" FontSize="30" FontWeight="Bold" Background="White" Width="250"/>
+                    <Button x:Name="decrementBtn" Content="-" Width="40" Height="40" Margin="358,0,449,12" Background="White" BorderBrush="Black" FontFamily="Cambria" FontSize="60" VerticalContentAlignment="Center" Padding="1,-22,1,0" VerticalAlignment="Bottom"/>
+                    <Button x:Name="incrementBtn" Content="+" Margin="450,235,357,12" FontFamily="Cambria" Width="40" Height="40" Background="White" BorderBrush="Black" FontSize="55" Padding="1,-20,1,0"/>
+                    <Label x:Name="qtyLbl" Content="99" HorizontalAlignment="Left" Margin="396,0,0,12" VerticalAlignment="Bottom" Height="40" FontFamily="Cambria" FontWeight="Bold" FontSize="30" HorizontalContentAlignment="Center" Padding="0" Width="55" BorderThickness="1" BorderBrush="Black" ScrollViewer.VerticalScrollBarVisibility="Disabled" VerticalContentAlignment="Center"/>
+                    <Label x:Name="qtyPriceLbl" Content="Total: $1,979.01" Margin="0,0,53,15" FontFamily="Cambria" FontWeight="Bold" FontSize="30" VerticalAlignment="Bottom" Width="250" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" HorizontalAlignment="Right"/>
                 </Grid>
-                <Label x:Name="priceLbl" Content="Price: $19.99" HorizontalAlignment="Left" Margin="82,205,0,0" VerticalAlignment="Top" FontSize="30" FontWeight="Bold" Width="250" HorizontalContentAlignment="Center"/>
+                <Label x:Name="priceLbl" Content="Price: $19.99" HorizontalAlignment="Left" Margin="82,226,0,0" VerticalAlignment="Top" FontSize="30" FontWeight="Bold" Width="250" HorizontalContentAlignment="Center"/>
             </Grid>
-            <Button x:Name="callBtn" Content="Call Server" HorizontalAlignment="Left" Margin="25,12.5,0,0" VerticalAlignment="Top" Width="200" BorderBrush="Black" Background="White" FontFamily="Cambria" Height="50" FontSize="35" FontWeight="Bold" d:IsLocked="True"/>
+            <Button x:Name="callBtn" Content="Call Server" HorizontalAlignment="Left" Margin="25,12.5,0,0" VerticalAlignment="Top" Width="200" BorderBrush="Black" Background="White" FontFamily="Cambria" Height="50" FontSize="35" FontWeight="Bold" Click="confirmCall"/>
+            <Border x:Name="mainSeparator" BorderBrush="Black" BorderThickness="1" Height="1" Margin="50,704,50,0" VerticalAlignment="Top"/>
         </Grid>
-        <Border x:Name="mainSeparator" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="1" Margin="10,629,0,0" VerticalAlignment="Top" Width="1252" Grid.Row="1" d:IsLocked="True"/>
-        <Grid x:Name="welcomeGrd" HorizontalAlignment="Left" Height="1052" Grid.RowSpan="3" VerticalAlignment="Top" Width="1914" Margin="0,0,0,-1" Background="White">
-            <Image Margin="0,665,1220,0" Source="bug-overlay.png" Stretch="Fill"/>
-            <Image Margin="1539,627,10,10" Source="UofCCoat.svg.png" Stretch="Fill"/>
-            <Button x:Name="begginBtn" Content="Begin" Margin="684,429" FontSize="100" Background="#FFD69536"/>
-            <TextBlock HorizontalAlignment="Center" Margin="414,69,397,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="355" Width="1103" FontSize="75"><Run Text="Welcome to The Den's electronic ordering system! "/><LineBreak/><Run Text="Press the button below to begin."/></TextBlock>
+        <Grid x:Name="welcomeGrd" HorizontalAlignment="Left" Height="1052" Grid.RowSpan="3" VerticalAlignment="Top" Width="1914" Margin="0,0,0,-1" Background="White" d:IsHidden="True">
+            <Image Margin="50,665,1220,50" Source="bug-overlay.png" Stretch="Fill"/>
+            <Image Margin="1610,738,50,50" Source="UofCCoat.svg.png" Stretch="Fill"/>
+            <Button x:Name="begginBtn" Content="Begin" Margin="684,479,684,379" FontSize="100" Background="#FFF56C0C" FontFamily="Cambria" FontWeight="Bold" BorderThickness="10" BorderBrush="Black" Padding="0" ScrollViewer.VerticalScrollBarVisibility="Disabled" Click="begin"/>
+            <TextBlock x:Name="welcomeTxt" HorizontalAlignment="Center" Margin="416,100,398,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="75" FontFamily="Cambria" FontWeight="Bold" TextDecorations="{x:Null}" TextAlignment="Center" Width="1100"><Run Text="Welcome to The Den's electronic ordering system! "/><LineBreak/><Run Text="Press the button below to begin."/></TextBlock>
         </Grid>
-        <Grid x:Name="confirmGrd" HorizontalAlignment="Left" Height="316" Margin="612,247,0,0" Grid.Row="1" VerticalAlignment="Top" Width="709" d:IsHidden="True">
+        <Grid x:Name="confirmGrd" HorizontalAlignment="Left" Height="275" Margin="612,247,0,0" Grid.Row="1" VerticalAlignment="Top" Width="709" Visibility="Hidden">
+            <Grid.Effect>
+                <DropShadowEffect ShadowDepth="10"/>
+            </Grid.Effect>
             <Grid.Background>
-                <SolidColorBrush Color="White" Opacity="0.6"/>
+                <SolidColorBrush Color="White"/>
             </Grid.Background>
-            <Button x:Name="yesBtn" Content="Confirm" HorizontalAlignment="Left" Margin="10,129,0,0" VerticalAlignment="Top" Width="324" Height="113" FontSize="80"/>
-            <Button x:Name="noBtn" Content="Cancel" HorizontalAlignment="Left" Margin="375,129,0,0" VerticalAlignment="Top" Width="324" Height="113" FontSize="80"/>
-            <TextBlock x:Name="sureTxt" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Are you sure?" VerticalAlignment="Top" Height="114" Width="689" FontSize="75" TextAlignment="Center"/>
+            <Border x:Name="confirmBrd" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="275" VerticalAlignment="Top" Width="709"/>
+            <Button x:Name="yesBtn" Content="Confirm" HorizontalAlignment="Left" Margin="20,129,0,0" VerticalAlignment="Top" Width="324" Height="113" FontSize="75" FontFamily="Cambria" FontWeight="Bold" BorderBrush="#FF00830C" Background="#FF2CAE38" BorderThickness="10" Click="confirm"/>
+            <Button x:Name="noBtn" Content="Cancel" Margin="0,129,20,0" VerticalAlignment="Top" Height="113" FontSize="75" FontFamily="Cambria" FontWeight="Bold" Background="#FFE22121" BorderBrush="#FF720000" BorderThickness="10" Foreground="Black" HorizontalAlignment="Right" Width="324" Click="cancel"/>
+            <TextBlock x:Name="sureTxt" HorizontalAlignment="Center" Margin="10,10,0,0" TextWrapping="Wrap" Text="Are you sure you want to call the server?" VerticalAlignment="Top" FontSize="50" TextAlignment="Center" FontFamily="Cambria" FontWeight="Bold"/>
         </Grid>
     </Grid>
 </Window>
