@@ -130,6 +130,8 @@ namespace Denu
         {
             confirmGrd.Visibility = Visibility.Hidden;
             dialogGrid.Visibility = Visibility.Hidden;
+            foodGrd.Visibility = Visibility.Hidden;
+            drinkGrd.Visibility = Visibility.Hidden;
             welcomeGrd.Visibility = Visibility.Visible;
         }
     }
