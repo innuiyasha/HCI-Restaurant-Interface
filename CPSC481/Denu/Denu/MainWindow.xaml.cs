@@ -98,11 +98,15 @@ namespace Denu
             pendImg1.Visibility = Visibility.Visible;
         }
 
+        // We're really going to have a seperate method for every item? Okay...
+
         private void hb1Press(object sender, MouseButtonEventArgs e)
         {
             itemImg.Source = new BitmapImage(new Uri("FoodDrink/RumNCoke.jpg", UriKind.Relative));
             priceLbl.Content = "Price: $7.99";
             itemLbl.Content = "Rum & Coke";
+            // Will render the "Add to Order" button clickable
+            itemGrey.Visibility = Visibility.Hidden;
         }
 
         private void hb2Press(object sender, MouseButtonEventArgs e)
@@ -110,6 +114,7 @@ namespace Denu
             itemImg.Source = new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative));
             priceLbl.Content = "Price: $7.99";
             itemLbl.Content = "Gin & Tonic";
+            itemGrey.Visibility = Visibility.Hidden;
         }
 
         private void addItem(object sender, RoutedEventArgs e)
@@ -119,6 +124,10 @@ namespace Denu
                 pendItem1Grd.Visibility = Visibility.Visible;
                 pendImg1.Visibility = Visibility.Hidden;
                 checkImg1.Visibility = Visibility.Visible;
+
+                // Will make other portions of the display visible such as the bill and pending
+                thePendGrd.Visibility = Visibility.Visible;
+                billBrd.Visibility = Visibility.Visible;
             }
         }
 
@@ -132,6 +141,9 @@ namespace Denu
             pendItem1Grd.Visibility = Visibility.Hidden;
             rcptItemGrd.Visibility = Visibility.Visible;
             totalLbl.Content = "Total: $7.99";
+
+            theRcptGrd.Visibility = Visibility.Visible;
+            rcptBrd.Visibility = Visibility.Visible;
         }
 
         private void reset(object sender, RoutedEventArgs e)
