@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Collections;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,6 +14,7 @@ namespace Denu
         private String description;
         private double price;
         private BitmapImage image;
+        private ArrayList allergens;
 
         public MenuItem(String name, String desc, double price, BitmapImage image)
         {
