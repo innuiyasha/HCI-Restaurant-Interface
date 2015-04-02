@@ -38,3 +38,16 @@ C:\Users\Spencer\Source\Repos\481deninterface\CPSC481\Denu\Denu\obj\Debug\Denu_M
 C:\Users\Spencer\Source\Repos\481deninterface\CPSC481\Denu\Denu\obj\Debug\Denu.g.resources
 C:\Users\Spencer\Source\Repos\481deninterface\CPSC481\Denu\Denu\obj\Debug\Denu.Properties.Resources.resources
 C:\Users\Spencer\Source\Repos\481deninterface\CPSC481\Denu\Denu\obj\Debug\Denu.csproj.GenerateResource.Cache
+C:\Users\smfbrier\Source\Repos\481deninterface2\CPSC481\Denu\Denu\bin\Debug\Denu.exe.config
+C:\Users\smfbrier\Source\Repos\481deninterface2\CPSC481\Denu\Denu\obj\Debug\Denu.exe
+C:\Users\smfbrier\Source\Repos\481deninterface2\CPSC481\Denu\Denu\obj\Debug\Denu.pdb
+C:\Users\smfbrier\Source\Repos\481deninterface2\CPSC481\Denu\Denu\obj\Debug\Denu.csprojResolveAssemblyReference.cache
+C:\Users\smfbrier\Source\Repos\481deninterface2\CPSC481\Denu\Denu\obj\Debug\MainWindow.baml
+C:\Users\smfbrier\Source\Repos\481deninterface2\CPSC481\Denu\Denu\obj\Debug\MainWindow.g.cs
+C:\Users\smfbrier\Source\Repos\481deninterface2\CPSC481\Denu\Denu\obj\Debug\App.g.cs
+C:\Users\smfbrier\Source\Repos\481deninterface2\CPSC481\Denu\Denu\obj\Debug\Denu_MarkupCompile.cache
+C:\Users\smfbrier\Source\Repos\481deninterface2\CPSC481\Denu\Denu\obj\Debug\Denu.g.resources
+C:\Users\smfbrier\Source\Repos\481deninterface2\CPSC481\Denu\Denu\obj\Debug\Denu.Properties.Resources.resources
+C:\Users\smfbrier\Source\Repos\481deninterface2\CPSC481\Denu\Denu\obj\Debug\Denu.csproj.GenerateResource.Cache
+C:\Users\smfbrier\Source\Repos\481deninterface2\CPSC481\Denu\Denu\bin\Debug\Denu.exe
+C:\Users\smfbrier\Source\Repos\481deninterface2\CPSC481\Denu\Denu\bin\Debug\Denu.pdb

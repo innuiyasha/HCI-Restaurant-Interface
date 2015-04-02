@@ -21,6 +21,7 @@ namespace Denu
     public partial class MainWindow : Window
     {
         Dictionary<String, MenuItem> menu;
+        MenuItem selectedItem = null;
 
         public MainWindow()
         {
@@ -58,10 +59,18 @@ namespace Denu
                 noBtn.Visibility = Visibility.Hidden;
                 okBtn.Visibility = Visibility.Visible;
             }
+            else if (sureTxt.Text.Equals("Is everyone ready to place their order?"))
+            {
+                confirmGrd.Visibility = Visibility.Hidden;
+                dialogGrid.Visibility = Visibility.Hidden;
+                checkImg1.Visibility = Visibility.Hidden;
+                pendImg1.Visibility = Visibility.Visible;
+            }
             else
             {
                 confirmGrd.Visibility = Visibility.Hidden;
                 dialogGrid.Visibility = Visibility.Hidden;
+
             }
             //trigger activation of stuff
         }
@@ -98,23 +107,20 @@ namespace Denu
             pendImg1.Visibility = Visibility.Visible;
         }
 
-        // We're really going to have a seperate method for every item? Okay...
-
-        private void hb1Press(object sender, MouseButtonEventArgs e)
+        private void itemPress(object sender, MouseButtonEventArgs e)
         {
-            itemImg.Source = new BitmapImage(new Uri("FoodDrink/RumNCoke.jpg", UriKind.Relative));
-            priceLbl.Content = "Price: $7.99";
-            itemLbl.Content = "Rum & Coke";
+            Label itemClicked = (Label)sender;
+            selectedItem = menu[(String) itemClicked.Content];
+
+            itemImg.Source = selectedItem.getImage();
+            priceLbl.Content = selectedItem.getPriceString();
+            itemLbl.Content = selectedItem.getName();
+
             // Will render the "Add to Order" button clickable
-            itemGrey.Visibility = Visibility.Hidden;
-        }
-
-        private void hb2Press(object sender, MouseButtonEventArgs e)
-        {
-            itemImg.Source = new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative));
-            priceLbl.Content = "Price: $7.99";
-            itemLbl.Content = "Gin & Tonic";
-            itemGrey.Visibility = Visibility.Hidden;
+            addBtn.IsEnabled = true;
+            decrementBtn.IsEnabled = true;
+            incrementBtn.IsEnabled = true;
+            qtyLbl.IsEnabled = true;
         }
 
         private void addItem(object sender, RoutedEventArgs e)
