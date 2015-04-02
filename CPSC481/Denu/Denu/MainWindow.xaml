@@ -2,7 +2,7 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Name="MainDenu" x:Class="Denu.MainWindow"
-        Title="Denu" Height="1080" Width="1920" WindowStartupLocation="Manual" MinWidth="1920" MinHeight="1080" ScrollViewer.VerticalScrollBarVisibility="Disabled">
+        Title="Denu" Height="1080" Width="1920" WindowStartupLocation="CenterScreen" MinWidth="1920" MinHeight="1080" ScrollViewer.VerticalScrollBarVisibility="Disabled" WindowState="Maximized">
     <Grid x:Name="primeGrd">
         <Grid.RowDefinitions>
             <RowDefinition Height="75"/>
@@ -63,7 +63,7 @@
                             <Label x:Name="hbItem1Lbl" Content="Rum &amp; Coke" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" FontFamily="Cambria" FontWeight="Bold" FontSize="34" Margin="314,44,0,0" BorderThickness="1,0" BorderBrush="Black" HorizontalAlignment="Left" MouseLeftButtonDown="itemPress"/>
                             <Label x:Name="hbItem2Lbl" Content="Gin &amp; Tonic" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" FontFamily="Cambria" FontWeight="Bold" FontSize="34" Margin="524,44,0,0" BorderBrush="Black" BorderThickness="1,0" HorizontalAlignment="Left" MouseLeftButtonDown="itemPress"/>
                             <Label x:Name="hbItem3Lbl" Content="Caesar" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" FontFamily="Cambria" FontWeight="Bold" FontSize="34" Margin="724,44,0,0" BorderBrush="Black" BorderThickness="1,0" HorizontalAlignment="Left"/>
-                            <Label x:Name="hbItem4Lbl" Content="Bloody Mary" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" FontFamily="Cambria" FontWeight="Bold" FontSize="34" Margin="850,44,0,0" BorderBrush="Black" BorderThickness="1,0" HorizontalAlignment="Left"/>
+                            <Label x:Name="hbItem4Lbl" Content="Jack and Ginger" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" FontFamily="Cambria" FontWeight="Bold" FontSize="34" Margin="850,44,0,0" BorderBrush="Black" BorderThickness="1,0" HorizontalAlignment="Left" MouseLeftButtonDown="itemPress"/>
                         </Grid>
                     </ScrollViewer>
                 </Grid>
@@ -74,7 +74,7 @@
                             <Label x:Name="beerItem1Lbl" Content="Budweiser" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" FontFamily="Cambria" FontWeight="Bold" FontSize="34" Margin="380,44,0,0" BorderThickness="1,0" BorderBrush="Black" HorizontalAlignment="Left"/>
                             <Label x:Name="beerItem2Lbl" Content="Heineken" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" FontFamily="Cambria" FontWeight="Bold" FontSize="34" Margin="567,44,0,0" BorderThickness="1,0" BorderBrush="Black" HorizontalAlignment="Left"/>
                             <Label x:Name="beerItem3Lbl" Content="Kokanee" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" FontFamily="Cambria" FontWeight="Bold" FontSize="34" Margin="738,44,0,0" BorderThickness="1,0" BorderBrush="Black" HorizontalAlignment="Left"/>
-                            <Label x:Name="beerItem4Lbl" Content="Coors" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" FontFamily="Cambria" FontWeight="Bold" FontSize="34" Margin="897,44,0,0" BorderThickness="1,0" BorderBrush="Black" HorizontalAlignment="Left"/>
+                            <Label x:Name="beerItem4Lbl" Content="Coors Light" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" FontFamily="Cambria" FontWeight="Bold" FontSize="34" Margin="897,44,0,0" BorderThickness="1,0" BorderBrush="Black" HorizontalAlignment="Left" Width="180" MouseLeftButtonDown="itemPress"/>
                         </Grid>
                     </ScrollViewer>
                 </Grid>
@@ -89,7 +89,7 @@
                 </Border>
                 <Grid x:Name="detailGrd" HorizontalAlignment="Left" Margin="488,0,0,13" Width="848" Height="210" VerticalAlignment="Bottom">
                     <Border x:Name="detailBrd" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="210" VerticalAlignment="Top" Width="848"/>
-                    <TextBox x:Name="descTxt" Margin="0,0,0,61" TextWrapping="Wrap" Text="Here's a very long sentence that I've made to try and test his label out. Hopefully, it can be long enough to fill a good portion of the space so I can see how this looks." Height="100" VerticalAlignment="Bottom" Padding="25,0" ScrollViewer.CanContentScroll="True" VerticalContentAlignment="Center" FontSize="24" FontFamily="Cambria" AllowDrop="False" Focusable="False" BorderThickness="0" Cursor="Arrow" UndoLimit="0" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalContentAlignment="Stretch" HorizontalAlignment="Right" Width="695"/>
+                    <TextBox x:Name="descTxt" Margin="0,0,0,61" TextWrapping="Wrap" Height="100" VerticalAlignment="Bottom" Padding="25,0" ScrollViewer.CanContentScroll="True" VerticalContentAlignment="Center" FontSize="24" FontFamily="Cambria" AllowDrop="False" Focusable="False" BorderThickness="0" Cursor="Arrow" UndoLimit="0" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalContentAlignment="Stretch" HorizontalAlignment="Right" Width="695" TextAlignment="Center"/>
                     <Button x:Name="addBtn" Content="Add to Order" BorderBrush="Black" Height="40" Margin="289,0,0,12" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontFamily="Cambria" FontSize="30" FontWeight="Bold" Background="#FFF56C0C" Width="250" Click="addItem" IsEnabled="False"/>
                     <Button x:Name="decrementBtn" Content="-" Width="40" Height="40" Margin="592,0,216,12" Background="#FFE22121" BorderBrush="Black" FontFamily="Cambria" FontSize="60" VerticalContentAlignment="Center" Padding="1,-22,1,0" VerticalAlignment="Bottom" IsEnabled="False"/>
                     <Button x:Name="incrementBtn" Content="+" Margin="685,158,123,12" FontFamily="Cambria" Width="40" Height="40" Background="#FF2CAE38" BorderBrush="Black" FontSize="55" Padding="1,-20,1,0" IsEnabled="False"/>
@@ -123,7 +123,7 @@
         <Border x:Name="billBrd" BorderBrush="Black" BorderThickness="1" Height="965" VerticalAlignment="Top" Margin="1414,75,-0.4,0" Opacity="0.8" Grid.RowSpan="2" Visibility="Hidden"/>
         <Border x:Name="pendBrd" BorderBrush="Black" BorderThickness="1" Height="76" VerticalAlignment="Top" Grid.RowSpan="2" Margin="1414,0,-0.4,0"/>
         <Border x:Name="rcptBrd" BorderBrush="Black" BorderThickness="1" Margin="1414,439,0,0" Height="76" Grid.Row="1" HorizontalAlignment="Left" Width="500" VerticalAlignment="Top" Visibility="Hidden"/>
-        <Grid x:Name="welcomeGrd" HorizontalAlignment="Left" Height="1052" Grid.RowSpan="2" VerticalAlignment="Top" Width="1914" Background="White" d:IsHidden="True">
+        <Grid x:Name="welcomeGrd" HorizontalAlignment="Left" Height="1080" Grid.RowSpan="2" VerticalAlignment="Top" Width="1920" Background="White" d:IsHidden="True">
             <Image Margin="50,665,1220,50" Source="bug-overlay.png" Stretch="Fill"/>
             <Image Margin="1610,738,50,50" Source="UofCCoat.svg.png" Stretch="Fill"/>
             <Button x:Name="beginBtn" Content="Begin" Margin="684,479,684,379" FontSize="100" Background="#FFF56C0C" FontFamily="Cambria" FontWeight="Bold" BorderThickness="10" BorderBrush="Black" Padding="0" ScrollViewer.VerticalScrollBarVisibility="Disabled" Click="begin"/>

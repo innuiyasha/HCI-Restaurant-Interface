@@ -27,10 +27,128 @@ namespace Denu
         {
             InitializeComponent();
 
-            //Create menu items yo
             menu = new Dictionary<String, MenuItem>();
-            menu.Add("Rum & Coke", new MenuItem("Rum & Coke", 6.99, new BitmapImage(new Uri("FoodDrink/RumNCoke.jpg", UriKind.Relative))));
-            menu.Add("Gin & Tonic", new MenuItem("Gin & Tonic", 6.99, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+
+            //Draft Beer by pint
+            menu.Add("Coors Banquet", new MenuItem("Coors Banquet", "It's uh, it's a pint of Coors Banquet", 4.75, new BitmapImage(new Uri("FoodDrink/RumNCoke.jpg", UriKind.Relative))));
+            menu.Add("Coors Light", new MenuItem("Coors Light", "It's uh, it's a pint of Coors Light", 4.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Canadian", new MenuItem("Canadian", "Le Canadien du Molson, eh", 4.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("MGD", new MenuItem("MGD", "Burr", 4.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Pilsner", new MenuItem("Pilsner", "Burr", 4.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Rickard's Red", new MenuItem("Rickard's Red", "Rickard's of the red variety", 4.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Rickard's White", new MenuItem("Rickard's White", "Rickard's of the white variety", 4.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+
+            //Premium Draft
+            menu.Add("Granville Seasonal", new MenuItem("Granville Seasonal", "Granville yo, it's good", 5.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Guiness", new MenuItem("Guiness", "Dark and earthy", 5.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Newcastle Brown", new MenuItem("Newcastle Brown", "Sounds um, brown I guess", 5.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Strongbow", new MenuItem("Strongbow", "Surprisingly light given the name", 5.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+
+            //Bottled Beer
+            menu.Add("Alexander Keith's", new MenuItem("Alexander Keith's", "Personal preference", 4.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Budweiser", new MenuItem("Budweiser", "Yum-ish, sort of, like if you're into that", 4.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Kokanee", new MenuItem("Kokanee", "Not too bad", 4.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            
+            //Premium Bottled Beer
+            menu.Add("Big Rock Grasshopper", new MenuItem("Big Rock Grasshopper", "Does it contain grasshoppers? Who knows...", 5.50, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Big Rock Traditional", new MenuItem("Big Rock Traditional", "Does it contain traditions? Who knows...", 5.50, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Corona", new MenuItem("Corona", "M-m-m-my Corona", 5.50, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Heineken", new MenuItem("Heineken", "Heiny CAN!", 5.50, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Mill St. Organic", new MenuItem("Mill St. Organic", "No pesticides, unlike everything else.....", 5.50, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Mill St. Tankhouse", new MenuItem("Mill St. Tankhouse", "Straight from the tankhouse, wherever that is", 5.50, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Steamwhistle", new MenuItem("Steamwhistle", "Woot woo", 5.50, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+
+            //Tall Boys
+            menu.Add("Innis & Gunn", new MenuItem("Innis & Gunn", "Innis a great beer?", 6.50, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Mill St. Lemon Tea", new MenuItem("Mill St. Lemon Tea", "Lemon? Tea? Sure...", 6.50, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Moosehead", new MenuItem("Moosehead", "Not as dirty as it sounds", 6.50, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Rolling Rock", new MenuItem("Rolling Rock", "Rock and roll", 6.50, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Steigl Radler (Grapefruit)", new MenuItem("Steigl Radler (Grapefruit)", "Das grapefruit beer", 6.50, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+
+            //Coolers
+            menu.Add("Smirnoff Ice", new MenuItem("Smirnoff Ice", "Smearing off on the ice", 5.50, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+
+            //Wine
+            menu.Add("Jacob's Creek Chardonnay", new MenuItem("Jacob's Creek Chardonnay", "Chardon you?", 5.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Jacob's Creek Shiraz Cabernet", new MenuItem("Jacob's Creek Shiraz Cabernet", "Tastes better than a creek, I'll bet", 5.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+
+            //Non-Alcoholic
+            menu.Add("O'Douls", new MenuItem("O'Douls", "Tipsy? Not on this you ain't", 5.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+
+            //Specialty Coffees
+            menu.Add("Irish Mocha", new MenuItem("Irish Mocha", "Coffee and Carolans Irish Cream", 5.25, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Irish Coffee", new MenuItem("Irish Mocha", "Coffee and Jameson Irish Whiskey", 5.25, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Spanish Coffee", new MenuItem("Spanish Coffee", "No one expects the Coffee, Havana Club rum, and Triple Sec!", 5.25, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Spiced Butter Coffee", new MenuItem("Spiced Butter Coffee", "Coffee, Lamb’s Spiced Rum, and butterscotch schnapps", 5.25, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("B52", new MenuItem("B52", "Coffee, Carolans Irish Cream, coffee liqueur, and Triple Sec", 5.25, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+
+            //Classic Cocktails
+            menu.Add("Bombay Gin and Tonic", new MenuItem("Bombay Gin and Tonic", "Bombay Sapphire gin, tonic water, twist of lime", 5.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Caesar", new MenuItem("Caesar", "Absolut vodka, Tabasco, Worcestershire, lime juice, clamato", 5.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Cuba Libre", new MenuItem("Cuba Libre", "Havana Club rum, Pepsi, lime juice", 5.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Jack and Ginger", new MenuItem("Jack and Ginger", "Jack Daniels, ginger ale, and a twist of lime", 5.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("SoCo and 7-UP", new MenuItem("SoCo and 7-UP", "Southern Comfort, 7-UP, and a twist of lemon", 5.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+
+            //Refreshing Choices
+            menu.Add("Blue Hawaiian Apple", new MenuItem("Blue Hawaiian Apple", "Absolut vodka, Apple Sour Puss, Blue Curacao, pineapple juice, club soda", 5.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Hard Lemonade", new MenuItem("Hard Lemonade", "Absolut vodka and lemonade", 5.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Limoncello Lemonade", new MenuItem("Limoncello Lemonade", "Limoncello, Absolut vodka, and lemonade", 5.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Tequila Sunrise", new MenuItem("Tequila Sunrise", "Olmeca tequila, orange juice, lime juice, and grenadine", 5.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+
+            //Perk-ups
+            menu.Add("Coffee", new MenuItem("Coffee", "One free refill with meal purchase", 1.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Tea", new MenuItem("Tea", "One free refill with meal purchase", 1.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+
+            //Pop
+            menu.Add("Iced Tea", new MenuItem("Iced Tea", "One free refill with meal purchase", 2.25, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Pepsi", new MenuItem("Pepsi", "One free refill with meal purchase", 2.25, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Ginger Ale", new MenuItem("Ginger Ale", "One free refill with meal purchase", 2.25, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("7-UP", new MenuItem("7-UP", "One free refill with meal purchase", 2.25, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            
+            //Juice
+            menu.Add("Cranberry", new MenuItem("Cranberry", "NO free refills", 2.25, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Orange", new MenuItem("Orange", "NO free refills", 2.25, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Lemonade", new MenuItem("Lemonade", "NO free refills", 2.25, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Clamato", new MenuItem("Clamato", "NO free refills", 2.25, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+
+            //Snacks
+            menu.Add("Chicken Fingers", new MenuItem("Chicken Fingers", "Served with fries and plum sauce", 9.50, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("The Den Dip Trio", new MenuItem("The Den Dip Trio", "Spinach and artichoke dip (served cold), tuscan white bean herb hummus with charred lemon and pico de gallo. Served with tortilla chips, pita chips, carrot and celery sticks", 9.00, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Nachos", new MenuItem("Nachos", "Tri-coloured tortilla chips, tomatoes, black olives, jalapeños, green onions, and mixed cheese. Served with salsa and sour cream", 14.00, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Deep Fried Breaded Agnolotti Pasta", new MenuItem("Deep Fried Breaded Agnolotti Pasta ", "8pcs filled with mozzarella cheese. Served with a tomato pesto sauce.", 10.00, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Tempura Extreme Beans", new MenuItem("Tempura Extreme Beans", "10pcs of fried spicy pickled green beans tossed in paprika and rosemary", 7.00, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Edamame Beans", new MenuItem("Edamame Beans", "Steamed and tossed in sesame ginger lime salt", 6.00, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Basket of Onion Rings", new MenuItem("Basket of Onion Rings", "Served with roasted garlic aioli", 7.00, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Basket of Rosemary French Fries", new MenuItem("Basket of Rosemary French Fries", "Delicious fries tossed in a rosemary spice", 5.00, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+
+            //Poutines
+            menu.Add("Den Poutine", new MenuItem("Den Poutine", "Authentic Québec cheese curds and house-made gravy", 9.50, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("The Tub Tub Poutine", new MenuItem("The Tub Tub Poutine", "Buffalo chicken fingers, authentic Québec cheese curds, house-made gravy, ranch dressing, and green onions", 10.50, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Jalapeño Bacon Club Poutine", new MenuItem("Jalapeño Bacon Club Poutine", "Chicken finger slices, peppered bacon, pico de gallo, green onions, diced jalapeños, authentic Québec cheese curds and house-made gravy", 10.50, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Breakfast Poutine", new MenuItem("Breakfast Poutine", "Crumbled peppered bacon, sautéed onions and mushrooms, topped with a sunny side up egg and authentic Québec cheese curds with house-made gravy", 11.00, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+
+            //Burgers
+            menu.Add("Classic Cheeseburger", new MenuItem("Classic Cheeseburger", "Served on a pretzel kaiser bun with lettuce, tomato, shaved red onion, cheddar cheese, and topped with a dill pickle spear", 10.00, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Homemade Vegan BBQ Black Bean Veggie Burger ", new MenuItem("Homemade Vegan BBQ Black Bean Veggie Burger ", "Served on a pretzel kaiser bun with lettuce, tomato, shaved red onion, cheddar cheese, and topped with a dill pickle spear. With guacomole and sautéed mushrooms.", 11.00, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("The Den Burger", new MenuItem("The Den Burger", "Served on a pretzel kaiser bun with lettuce, tomato, shaved red onion, cheddar and mozzarella cheese, and topped with a dill pickle spear. With sautéed mushroom mix, and crisp bacon.", 12.25, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("California BBQ Burger", new MenuItem("California BBQ Burger", "Served on a pretzel kaiser bun with lettuce, tomato, shaved red onion, cheddar cheese, and topped with a dill pickle spear. With Jack Daniel's BBQ sauce, crisp bacon, and sliced avocado.", 12.25, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Ring O’ Fire Burger", new MenuItem("Ring O’ Fire Burger", "Served on a pretzel kaiser bun with lettuce, tomato, shaved red onion, and topped with a dill pickle spear. With Chipotle lime sauce, jalapeños, pico de gallo, and jalapeño Havarti cheese.", 12.25, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+
+            //Sandwiches etc.
+            menu.Add("Buffalo Chicken Wrap", new MenuItem("Buffalo Chicken Wrap", "Buffalo chicken fingers, lettuce, tomato, and ranch sauce in a tomato tortilla", 10.25, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Sirloin Steak Sandwich", new MenuItem("Sirloin Steak Sandwich", "On garlic ciabatta bread with caramelized onions and sautéed mushrooms", 12.50, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Avocado Chicken Club", new MenuItem("Avocado Chicken Club", "Adobo grilled chicken breast, roasted garlic mayo, leaf lettuce, sliced tomato, sliced avocado, and smoky bacon on toasted ciabatta bread", 12.00, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("BBQ Chicken Club", new MenuItem("BBQ Chicken Club", "Grilled chicken breast, smoky bacon, lettuce, tomato, roasted garlic mayo, and Jack Daniel’s BBQ sauce on a toasted pretzel bun", 10.25, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Cuban Flank Steak Beef Dip", new MenuItem("Cuban Flank Steak Beef Dip", "Served on a pretzel kaiser bun with lettuce, tomato, shaved red onion, and topped with a dill pickle spear. With Chipotle lime sauce, jalapeños, pico de gallo, and jalapeño Havarti cheese.", 12.00, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Crispy Quinoa & Red Lentil Wrap", new MenuItem("Crispy Quinoa & Red Lentil Wrap", "Served on a pretzel kaiser bun with lettuce, tomato, shaved red onion, and topped with a dill pickle spear. With Chipotle lime sauce, jalapeños, pico de gallo, and jalapeño Havarti cheese.", 9.50, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Fish & Chips", new MenuItem("Fish & Chips", "Served on a pretzel kaiser bun with lettuce, tomato, shaved red onion, and topped with a dill pickle spear. With Chipotle lime sauce, jalapeños, pico de gallo, and jalapeño Havarti cheese.", 13.00, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Butter Chicken", new MenuItem("Butter Chicken", "Served on a pretzel kaiser bun with lettuce, tomato, shaved red onion, and topped with a dill pickle spear. With Chipotle lime sauce, jalapeños, pico de gallo, and jalapeño Havarti cheese.", 13.00, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Monterrey Fish Taco", new MenuItem("Monterrey Fish Taco", "Served on a pretzel kaiser bun with lettuce, tomato, shaved red onion, and topped with a dill pickle spear. With Chipotle lime sauce, jalapeños, pico de gallo, and jalapeño Havarti cheese.", 11.00, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Carne Asada Taco", new MenuItem("Carne Asada Taco", "Served on a pretzel kaiser bun with lettuce, tomato, shaved red onion, and topped with a dill pickle spear. With Chipotle lime sauce, jalapeños, pico de gallo, and jalapeño Havarti cheese.", 11.00, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Pollo Tinga Taco", new MenuItem("Pollo Tinga Taco", "Served on a pretzel kaiser bun with lettuce, tomato, shaved red onion, and topped with a dill pickle spear. With Chipotle lime sauce, jalapeños, pico de gallo, and jalapeño Havarti cheese.", 11.00, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Grilled Vegetable Pappardelle Pasta", new MenuItem("Grilled Vegetable Pappardelle Pasta", "Served on a pretzel kaiser bun with lettuce, tomato, shaved red onion, and topped with a dill pickle spear. With Chipotle lime sauce, jalapeños, pico de gallo, and jalapeño Havarti cheese.", 12.00, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Carbonara Pappardelle", new MenuItem("Carbonara Pappardelle", "Served on a pretzel kaiser bun with lettuce, tomato, shaved red onion, and topped with a dill pickle spear. With Chipotle lime sauce, jalapeños, pico de gallo, and jalapeño Havarti cheese.", 13.00, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Ancho Chicken Pappardelle", new MenuItem("Ancho Chicken Pappardelle", "Served on a pretzel kaiser bun with lettuce, tomato, shaved red onion, and topped with a dill pickle spear. With Chipotle lime sauce, jalapeños, pico de gallo, and jalapeño Havarti cheese.", 13.00, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
         }
 
         private void begin(object sender, RoutedEventArgs e)
@@ -113,6 +231,7 @@ namespace Denu
             selectedItem = menu[(String) itemClicked.Content];
 
             itemImg.Source = selectedItem.getImage();
+            descTxt.Text = selectedItem.getDesc();
             priceLbl.Content = selectedItem.getPriceString();
             itemLbl.Content = selectedItem.getName();
 
