@@ -216,8 +216,6 @@ namespace Denu
             {
                 confirmGrd.Visibility = Visibility.Hidden;
                 dialogGrid.Visibility = Visibility.Hidden;
-                checkImg1.Visibility = Visibility.Hidden;
-                pendImg1.Visibility = Visibility.Visible;
             }
             else
             {
@@ -254,10 +252,14 @@ namespace Denu
             dialogGrid.Visibility = Visibility.Visible;
         }
 
-        private void orderItem1(object sender, MouseButtonEventArgs e)
+        private void orderItem(object sender, MouseButtonEventArgs e)
         {
-            checkImg1.Visibility = Visibility.Hidden;
-            pendImg1.Visibility = Visibility.Visible;
+            Image itemGridImage = (Image)sender;
+            Grid itemGrid = (Grid)itemGridImage.Parent;
+            pendItem item = (pendItem)itemGrid.Parent;
+
+            item.checkImg.Visibility = Visibility.Hidden;
+            item.pendImg.Visibility = Visibility.Visible;
         }
 
         private void itemPress(object sender, MouseButtonEventArgs e)
@@ -265,10 +267,40 @@ namespace Denu
             Label itemClicked = (Label)sender;
             selectedItem = menu[(String) itemClicked.Content];
 
+
             itemImg.Source = selectedItem.getImage();
             descTxt.Text = selectedItem.getDesc();
             priceLbl.Content = selectedItem.getPriceString();
             itemLbl.Content = selectedItem.getName();
+
+            qtyLbl.Content = "1";
+
+            addBtn.Content = "Add to Order";
+
+            for (int i = 0; i < pendLst.Items.Count; i++)
+            {
+                pendItem itemAt = (pendItem)pendLst.Items.GetItemAt(i);
+                if (selectedItem.getName().Equals(itemAt.NameLbl.Content.ToString()))
+                {
+                    // Okay, checking if they've already put in an order for this or not
+                    if (itemAt.checkImg.Visibility == Visibility.Visible)
+                    {
+                        String loadedLbl = itemAt.QtyLbl.Content.ToString();
+                        char[] deliminator = {'x'};
+                        String[] words = loadedLbl.Split(deliminator);
+                        qtyLbl.Content = words[words.Length - 1];
+
+                        addBtn.Content = "Update Order";
+
+                        break;
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+            }
+
 
             // Will render the "Add to Order" button clickable
 
@@ -292,28 +324,84 @@ namespace Denu
 
         private void addItem(object sender, RoutedEventArgs e)
         {
-            if(!itemLbl.Content.Equals("")){
-                billGrd.Visibility = Visibility.Visible;
-                pendItem1Grd.Visibility = Visibility.Visible;
-                pendImg1.Visibility = Visibility.Hidden;
-                checkImg1.Visibility = Visibility.Visible;
+            if (addBtn.Content.Equals("Add to Order"))
+            {
+                if (!itemLbl.Content.Equals(""))
+                {
+                    billGrd.Visibility = Visibility.Visible;
 
-                // Will make other portions of the display visible such as the bill and pending
-                thePendGrd.Visibility = Visibility.Visible;
-                billBrd.Visibility = Visibility.Visible;
+                    pendItem tmp = new pendItem(itemLbl.Content.ToString(), priceLbl.Content.ToString(), qtyLbl.Content.ToString());
+                    tmp.checkImg.MouseLeftButtonUp += orderItem;
+                    tmp.pendImg.MouseLeftButtonUp += serveConfirm;
+                    tmp.cancelImg.MouseLeftButtonUp += x1Pend;
+
+                    pendLst.Items.Add(tmp);
+
+                    // Will make other portions of the display visible such as the bill and pending
+                    thePendGrd.Visibility = Visibility.Visible;
+                    billBrd.Visibility = Visibility.Visible;
+                }
             }
+            else
+            {
+                pendItem newItem = new pendItem(itemLbl.Content.ToString(), priceLbl.Content.ToString(), qtyLbl.Content.ToString());
+
+                newItem.checkImg.MouseLeftButtonUp += orderItem;
+                newItem.pendImg.MouseLeftButtonUp += serveConfirm;
+                newItem.cancelImg.MouseLeftButtonUp += x1Pend;
+                for (int i = 0; i < pendLst.Items.Count; i++)
+                {
+                    pendItem indexItem = (pendItem)pendLst.Items.GetItemAt(i);
+                    if (indexItem.equals(newItem))
+                    {
+                        Console.WriteLine(i);
+                        pendLst.Items.RemoveAt(i);
+                        pendLst.Items.Insert(i, newItem);
+                        break;
+                    }
+                }
+            }
+            addBtn.Content = "Update Order";
         }
 
-        private void xPend1(object sender, MouseButtonEventArgs e)
+        private void x1Pend(object sender, MouseButtonEventArgs e)
         {
-            pendItem1Grd.Visibility = Visibility.Hidden;
+            Image itemGridImage = (Image)sender;
+            Grid itemGrid = (Grid)itemGridImage.Parent;
+            pendItem item = (pendItem)itemGrid.Parent;
+
+            pendLst.Items.Remove(item);
         }
 
+        // For now this method is being written as if the server verifies each item independantly. 
         private void serveConfirm(object sender, MouseButtonEventArgs e)
         {
-            pendItem1Grd.Visibility = Visibility.Hidden;
-            rcptItemGrd.Visibility = Visibility.Visible;
-            totalLbl.Content = "Total: $7.99";
+            Image itemGridImage = (Image)sender;
+            Grid itemGrid = (Grid)itemGridImage.Parent;
+            pendItem item = (pendItem)itemGrid.Parent;
+
+
+            String totalString = totalLbl.Content.ToString();
+            Char[] delimiter = { 'x', ' ' };
+            String[] oldWords = totalString.Split(delimiter);
+            // 0: "Total:" 1: price
+
+            Double oldPrice = Double.Parse(oldWords[oldWords.Length - 1]);
+
+            String[] newWords = item.PriceLbl.Content.ToString().Split(delimiter);
+            // First item(0: "", 1: price), Next items(0: price)
+
+            Double newPrice = Double.Parse(item.PriceLbl.Content.ToString());
+
+            String[] qtyWords = item.QtyLbl.Content.ToString().Split(delimiter);
+            int qty = int.Parse(qtyWords[qtyWords.Length - 1]);
+
+
+            receiptLst.Items.Add(new receiptItem(qty + "x " + item.NameLbl.Content.ToString(), "" + (newPrice * qty)));
+
+            pendLst.Items.Remove(item);
+
+            totalLbl.Content = oldPrice + (newPrice * qty);
 
             theRcptGrd.Visibility = Visibility.Visible;
             rcptBrd.Visibility = Visibility.Visible;
@@ -365,6 +453,18 @@ namespace Denu
             {
                 int tempQty = Convert.ToInt32(qtyLbl.Content);
                 qtyLbl.Content = tempQty - 1;
+            }
+        }
+
+        private void pendItemClicked(object sender, MouseButtonEventArgs e)
+        {
+            if (pendLst.SelectedIndex != -1)
+            {
+                pendItem item = (pendItem)pendLst.SelectedItem;
+                Label tmp = new Label();
+                tmp.Content = item.NameLbl.Content.ToString();
+
+                itemPress(tmp, e);
             }
         }
     }
