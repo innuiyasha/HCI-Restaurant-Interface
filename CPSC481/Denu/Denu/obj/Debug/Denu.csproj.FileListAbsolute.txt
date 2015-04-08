@@ -68,3 +68,7 @@ C:\Users\Spencer\Source\Repos\Denu\CPSC481\Denu\Denu\bin\Debug\Denu.exe
 C:\Users\Spencer\Source\Repos\Denu\CPSC481\Denu\Denu\bin\Debug\Denu.pdb
 C:\Users\Spencer\Source\Repos\Denu\CPSC481\Denu\Denu\obj\Debug\receiptItem.baml
 C:\Users\Spencer\Source\Repos\Denu\CPSC481\Denu\Denu\obj\Debug\receiptItem.g.cs
+C:\Users\Spencer\Source\Repos\481deninterface\CPSC481\Denu\Denu\obj\Debug\pendItem.baml
+C:\Users\Spencer\Source\Repos\481deninterface\CPSC481\Denu\Denu\obj\Debug\receiptItem.baml
+C:\Users\Spencer\Source\Repos\481deninterface\CPSC481\Denu\Denu\obj\Debug\pendItem.g.cs
+C:\Users\Spencer\Source\Repos\481deninterface\CPSC481\Denu\Denu\obj\Debug\receiptItem.g.cs

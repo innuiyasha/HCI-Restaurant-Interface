@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" Height="40" Width="478">
     <Grid Width="478" Height="40">
-        <Label x:Name="NameLbl" Content="Name" HorizontalAlignment="Left" Margin="85,0,0,0" VerticalAlignment="Top" Height="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" FontFamily="Cambria" FontWeight="Bold" FontSize="24" Width="206"/>
+        <Label x:Name="NameLbl" Content="Name" HorizontalAlignment="Left" Margin="85,0,0,0" VerticalAlignment="Top" Height="40" VerticalContentAlignment="Center" Padding="0" FontFamily="Cambria" FontWeight="Bold" FontSize="24" Width="206"/>
         <Image x:Name="cancelImg" Height="40" Margin="0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="41" Source="cancel-icon.png" Stretch="Fill"/>
         <Image x:Name="checkImg" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="41" Stretch="Fill" Source="checkmark.png"/>
         <Image x:Name="pendImg" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="41" Source="pending.png" Visibility="Hidden"/>
