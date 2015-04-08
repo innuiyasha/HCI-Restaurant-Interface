@@ -282,22 +282,13 @@ namespace Denu
                 pendItem itemAt = (pendItem)pendLst.Items.GetItemAt(i);
                 if (selectedItem.getName().Equals(itemAt.NameLbl.Content.ToString()))
                 {
-                    // Okay, checking if they've already put in an order for this or not
-                    if (itemAt.checkImg.Visibility == Visibility.Visible)
-                    {
-                        String loadedLbl = itemAt.QtyLbl.Content.ToString();
-                        char[] deliminator = {'x'};
-                        String[] words = loadedLbl.Split(deliminator);
-                        qtyLbl.Content = words[words.Length - 1];
+                    String loadedLbl = itemAt.QtyLbl.Content.ToString();
+                    char[] deliminator = {'x'};
+                    String[] words = loadedLbl.Split(deliminator);
+                    qtyLbl.Content = words[words.Length - 1];
+                     addBtn.Content = "Update Order";
 
-                        addBtn.Content = "Update Order";
-
-                        break;
-                    }
-                    else
-                    {
-                        break;
-                    }
+                    break;
                 }
             }
 
@@ -354,6 +345,12 @@ namespace Denu
                     pendItem indexItem = (pendItem)pendLst.Items.GetItemAt(i);
                     if (indexItem.equals(newItem))
                     {
+                        if (indexItem.pendImg.Visibility == Visibility.Visible)
+                        {
+                            newItem.pendImg.Visibility = Visibility.Visible;
+                            newItem.checkImg.Visibility = Visibility.Hidden;
+                        }
+
                         Console.WriteLine(i);
                         pendLst.Items.RemoveAt(i);
                         pendLst.Items.Insert(i, newItem);
