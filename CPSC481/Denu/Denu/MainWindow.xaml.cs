@@ -403,6 +403,8 @@ namespace Denu
 
             totalLbl.Content = oldPrice + (newPrice * qty);
 
+            theRcptGrd.Visibility = Visibility.Visible;
+            rcptBrd.Visibility = Visibility.Visible;
         }
 
         private void reset(object sender, RoutedEventArgs e)
