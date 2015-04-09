@@ -14,7 +14,6 @@ namespace Denu
         private String description;
         private double price;
         private BitmapImage image;
-        private ArrayList allergens;
 
         public MenuItem(String name, String desc, double price, BitmapImage image)
         {
@@ -35,7 +34,7 @@ namespace Denu
 
         public String getPriceString()
         {
-            return "Price: " + price.ToString();
+            return "Price: " + price.ToString("C2");
         }
 
         public BitmapImage getImage()

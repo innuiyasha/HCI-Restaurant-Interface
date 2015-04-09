@@ -33,87 +33,50 @@ namespace Denu
 
             //Drink~~~~~~~~~~~~~
             //Draft Beer by pint
-            menu.Add("Coors Banquet", new MenuItem("Coors Banquet", "It's uh, it's a pint of Coors Banquet", 4.75, new BitmapImage(new Uri("FoodDrink/RumNCoke.jpg", UriKind.Relative))));
-            menu.Add("Coors Light", new MenuItem("Coors Light", "It's uh, it's a pint of Coors Light", 4.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Canadian", new MenuItem("Canadian", "Le Canadien du Molson, eh", 4.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("MGD", new MenuItem("MGD", "Burr", 4.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Pilsner", new MenuItem("Pilsner", "Burr", 4.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Rickard's Red", new MenuItem("Rickard's Red", "Rickard's of the red variety", 4.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Rickard's White", new MenuItem("Rickard's White", "Rickard's of the white variety", 4.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Coors Banquet", new MenuItem("Coors Banquet", "It's uh, it's a pint of Coors Banquet", 4.75, new BitmapImage(new Uri("FoodDrink/Coors-Banquet-Full-V2.jpg", UriKind.Relative))));
+            menu.Add("Coors Light", new MenuItem("Coors Light", "It's uh, it's a pint of Coors Light", 4.75, new BitmapImage(new Uri("FoodDrink/coorsLight.jpg", UriKind.Relative))));
+            menu.Add("Canadian", new MenuItem("Canadian", "Le Canadien du Molson, eh", 4.75, new BitmapImage(new Uri("FoodDrink/Canadian.jpg", UriKind.Relative))));
+            menu.Add("MGD", new MenuItem("MGD", "Burr", 4.75, new BitmapImage(new Uri("FoodDrink/MGDPint.jpg", UriKind.Relative))));
+            menu.Add("Pilsner", new MenuItem("Pilsner", "Burr", 4.75, new BitmapImage(new Uri("FoodDrink/pilsner.jpg", UriKind.Relative))));
+            menu.Add("Rickard's Red", new MenuItem("Rickard's Red", "Rickard's of the red variety", 4.75, new BitmapImage(new Uri("FoodDrink/pintRickardsRed.png", UriKind.Relative))));
+            menu.Add("Rickard's White", new MenuItem("Rickard's White", "Rickard's of the white variety", 4.75, new BitmapImage(new Uri("FoodDrink/pintRickardsWhite.png", UriKind.Relative))));
 
             //Premium Draft
-            menu.Add("Granville Seasonal", new MenuItem("Granville Seasonal", "Granville yo, it's good", 5.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Guiness", new MenuItem("Guiness", "Dark and earthy", 5.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Newcastle Brown", new MenuItem("Newcastle Brown", "Sounds um, brown I guess", 5.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Strongbow", new MenuItem("Strongbow", "Surprisingly light given the name", 5.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Granville Seasonal", new MenuItem("Granville Seasonal", "Granville yo, it's good", 5.75, new BitmapImage(new Uri("FoodDrink/granvilleIsland.jpg", UriKind.Relative))));
+            menu.Add("Guinness", new MenuItem("Guinness", "Dark and earthy", 5.75, new BitmapImage(new Uri("FoodDrink/guinness.jpg", UriKind.Relative))));
+            menu.Add("Newcastle Brown", new MenuItem("Newcastle Brown", "Sounds um, brown I guess", 5.75, new BitmapImage(new Uri("FoodDrink/newCastleBrown.jpg", UriKind.Relative))));
+            menu.Add("Strongbow", new MenuItem("Strongbow", "Surprisingly light given the name", 5.75, new BitmapImage(new Uri("FoodDrink/strongbowPint.jpg", UriKind.Relative))));
 
             //Bottled Beer
-            menu.Add("Alexander Keith's", new MenuItem("Alexander Keith's", "Personal preference", 4.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Budweiser", new MenuItem("Budweiser", "Yum-ish, sort of, like if you're into that", 4.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Kokanee", new MenuItem("Kokanee", "Not too bad", 4.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Alexander Keith's", new MenuItem("Alexander Keith's", "Personal preference", 4.75, new BitmapImage(new Uri("FoodDrink/keithsBottle.jpg", UriKind.Relative))));
+            menu.Add("Budweiser", new MenuItem("Budweiser", "Yum-ish, sort of, like if you're into that", 4.75, new BitmapImage(new Uri("FoodDrink/budweiser.jpg", UriKind.Relative))));
+            menu.Add("Kokanee", new MenuItem("Kokanee", "Not too bad", 4.75, new BitmapImage(new Uri("FoodDrink/kokanee_bottle.jpg", UriKind.Relative))));
 
             //Premium Bottled Beer
-            menu.Add("Big Rock Grasshopper", new MenuItem("Big Rock Grasshopper", "Does it contain grasshoppers? Who knows...", 5.50, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Big Rock Traditional", new MenuItem("Big Rock Traditional", "Does it contain traditions? Who knows...", 5.50, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Corona", new MenuItem("Corona", "M-m-m-my Corona", 5.50, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Heineken", new MenuItem("Heineken", "Heiny CAN!", 5.50, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Mill St. Organic", new MenuItem("Mill St. Organic", "No pesticides, unlike everything else.....", 5.50, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Mill St. Tankhouse", new MenuItem("Mill St. Tankhouse", "Straight from the tankhouse, wherever that is", 5.50, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Steamwhistle", new MenuItem("Steamwhistle", "Woot woo", 5.50, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Big Rock Grasshopper", new MenuItem("Big Rock Grasshopper", "Does it contain grasshoppers? Who knows...", 5.50, new BitmapImage(new Uri("FoodDrink/grasshopper.png", UriKind.Relative))));
+            menu.Add("Big Rock Traditional", new MenuItem("Big Rock Traditional", "Does it contain traditions? Who knows...", 5.50, new BitmapImage(new Uri("FoodDrink/tradBottle.jpg", UriKind.Relative))));
+            menu.Add("Corona", new MenuItem("Corona", "M-m-m-my Corona", 5.50, new BitmapImage(new Uri("FoodDrink/coronaBottle.jpg", UriKind.Relative))));
+            menu.Add("Heineken", new MenuItem("Heineken", "Heiny CAN!", 5.50, new BitmapImage(new Uri("FoodDrink/Heineken.jpg", UriKind.Relative))));
+            menu.Add("Mill St. Organic", new MenuItem("Mill St. Organic", "No pesticides, unlike everything else.....", 5.50, new BitmapImage(new Uri("FoodDrink/mill_st_bottle.jpg", UriKind.Relative))));
+            menu.Add("Mill St. Tankhouse", new MenuItem("Mill St. Tankhouse", "Straight from the tankhouse, wherever that is", 5.50, new BitmapImage(new Uri("FoodDrink/tankhouse.jpeg", UriKind.Relative))));
+            menu.Add("Steamwhistle", new MenuItem("Steamwhistle", "Woot woo", 5.50, new BitmapImage(new Uri("FoodDrink/steamwhistle_hand_and_bottle.jpg", UriKind.Relative))));
 
             //Tall Boys
-            menu.Add("Innis & Gunn", new MenuItem("Innis & Gunn", "Innis a great beer?", 6.50, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Mill St. Lemon Tea", new MenuItem("Mill St. Lemon Tea", "Lemon? Tea? Sure...", 6.50, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Moosehead", new MenuItem("Moosehead", "Not as dirty as it sounds", 6.50, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Rolling Rock", new MenuItem("Rolling Rock", "Rock and roll", 6.50, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Steigl Radler (Grapefruit)", new MenuItem("Steigl Radler (Grapefruit)", "Das grapefruit beer", 6.50, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Innis & Gunn", new MenuItem("Innis & Gunn", "Innis a great beer?", 6.50, new BitmapImage(new Uri("FoodDrink/innisAndGunnCan.png", UriKind.Relative))));
+            menu.Add("Mill St. Lemon Tea", new MenuItem("Mill St. Lemon Tea", "Lemon? Tea? Sure...", 6.50, new BitmapImage(new Uri("FoodDrink/millStTea.jpg", UriKind.Relative))));
+            menu.Add("Moosehead", new MenuItem("Moosehead", "Not as dirty as it sounds", 6.50, new BitmapImage(new Uri("FoodDrink/mooseheadTallboy.jpg", UriKind.Relative))));
+            menu.Add("Rolling Rock", new MenuItem("Rolling Rock", "Rock and roll", 6.50, new BitmapImage(new Uri("FoodDrink/rollingRock.jpg", UriKind.Relative))));
+            menu.Add("Steigl Radler (Grapefruit)", new MenuItem("Steigl Radler (Grapefruit)", "Das grapefruit beer", 6.50, new BitmapImage(new Uri("FoodDrink/steigleRadler.png", UriKind.Relative))));
 
             //Coolers
-            menu.Add("Smirnoff Ice", new MenuItem("Smirnoff Ice", "Smearing off the ice", 5.50, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-
-            //Wine
-            menu.Add("Jacob's Creek Chardonnay", new MenuItem("Jacob's Creek Chardonnay", "Chardon you?", 5.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Jacob's Creek Shiraz Cabernet", new MenuItem("Jacob's Creek Shiraz Cabernet", "Tastes better than a creek, I'll bet", 5.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-
-            //Non-Alcoholic
-            menu.Add("O'Douls", new MenuItem("O'Douls", "Tipsy? Not on this you ain't", 5.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-
-            //Specialty Coffees
-            menu.Add("Irish Mocha", new MenuItem("Irish Mocha", "Coffee and Carolans Irish Cream", 5.25, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Irish Coffee", new MenuItem("Irish Mocha", "Coffee and Jameson Irish Whiskey", 5.25, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Spanish Coffee", new MenuItem("Spanish Coffee", "No one expects the Coffee, Havana Club rum, and Triple Sec!", 5.25, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Spiced Butter Coffee", new MenuItem("Spiced Butter Coffee", "Coffee, Lamb’s Spiced Rum, and butterscotch schnapps", 5.25, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("B52", new MenuItem("B52", "Coffee, Carolans Irish Cream, coffee liqueur, and Triple Sec", 5.25, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Smirnoff Ice", new MenuItem("Smirnoff Ice", "Smearing off the ice", 5.50, new BitmapImage(new Uri("FoodDrink/smirnoff_ice_standard.jpg", UriKind.Relative))));
 
             //Classic Cocktails
             menu.Add("Bombay Gin and Tonic", new MenuItem("Bombay Gin and Tonic", "Bombay Sapphire gin, tonic water, twist of lime", 5.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Caesar", new MenuItem("Caesar", "Absolut vodka, Tabasco, Worcestershire, lime juice, clamato", 5.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Cuba Libre", new MenuItem("Cuba Libre", "Havana Club rum, Pepsi, lime juice", 5.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Jack and Ginger", new MenuItem("Jack and Ginger", "Jack Daniels, ginger ale, and a twist of lime", 5.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("SoCo and 7-UP", new MenuItem("SoCo and 7-UP", "Southern Comfort, 7-UP, and a twist of lemon", 5.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-
-            //Refreshing Choices
-            menu.Add("Blue Hawaiian Apple", new MenuItem("Blue Hawaiian Apple", "Absolut vodka, Apple Sour Puss, Blue Curacao, pineapple juice, club soda", 5.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Hard Lemonade", new MenuItem("Hard Lemonade", "Absolut vodka and lemonade", 5.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Limoncello Lemonade", new MenuItem("Limoncello Lemonade", "Limoncello, Absolut vodka, and lemonade", 5.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Tequila Sunrise", new MenuItem("Tequila Sunrise", "Olmeca tequila, orange juice, lime juice, and grenadine", 5.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-
-            //Perk-ups
-            menu.Add("Coffee", new MenuItem("Coffee", "One free refill with meal purchase", 1.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Tea", new MenuItem("Tea", "One free refill with meal purchase", 1.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-
-            //Pop
-            menu.Add("Iced Tea", new MenuItem("Iced Tea", "One free refill with meal purchase", 2.25, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Pepsi", new MenuItem("Pepsi", "One free refill with meal purchase", 2.25, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Ginger Ale", new MenuItem("Ginger Ale", "One free refill with meal purchase", 2.25, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("7-UP", new MenuItem("7-UP", "One free refill with meal purchase", 2.25, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-
-            //Juice
-            menu.Add("Cranberry", new MenuItem("Cranberry", "NO free refills", 2.25, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Orange", new MenuItem("Orange", "NO free refills", 2.25, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Lemonade", new MenuItem("Lemonade", "NO free refills", 2.25, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Clamato", new MenuItem("Clamato", "NO free refills", 2.25, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Milk", new MenuItem("Milk", "NO free refills", 2.25, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Caesar", new MenuItem("Caesar", "Absolut vodka, Tabasco, Worcestershire, lime juice, clamato", 5.75, new BitmapImage(new Uri("FoodDrink/caesar.jpg", UriKind.Relative))));
+            menu.Add("Cuba Libre", new MenuItem("Cuba Libre", "Havana Club rum, Pepsi, lime juice", 5.75, new BitmapImage(new Uri("FoodDrink/RumNCoke.jpg", UriKind.Relative))));
+            menu.Add("Jack and Ginger", new MenuItem("Jack and Ginger", "Jack Daniels, ginger ale, and a twist of lime", 5.75, new BitmapImage(new Uri("FoodDrink/jackAndGinger.jpg", UriKind.Relative))));
+            menu.Add("SoCo and 7-UP", new MenuItem("SoCo and 7-UP", "Southern Comfort, 7-UP, and a twist of lemon", 5.75, new BitmapImage(new Uri("FoodDrink/socoAnd7Up.jpg", UriKind.Relative))));
 
             //Food~~~~~~~~~~~~~~~~~~~~
             //Snacks
