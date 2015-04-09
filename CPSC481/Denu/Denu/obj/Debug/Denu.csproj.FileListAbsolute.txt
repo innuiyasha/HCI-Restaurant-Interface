@@ -93,3 +93,4 @@ U:\481deninterface\CPSC481\Denu\Denu\obj\Debug\pendItem.baml
 U:\481deninterface\CPSC481\Denu\Denu\obj\Debug\receiptItem.baml
 U:\481deninterface\CPSC481\Denu\Denu\obj\Debug\pendItem.g.cs
 U:\481deninterface\CPSC481\Denu\Denu\obj\Debug\receiptItem.g.cs
+U:\481deninterface\481deninterface\CPSC481\Denu\Denu\bin\Debug\Denu.exe.config

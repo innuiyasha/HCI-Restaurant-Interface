@@ -51,7 +51,7 @@ namespace Denu
             menu.Add("Alexander Keith's", new MenuItem("Alexander Keith's", "Personal preference", 4.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
             menu.Add("Budweiser", new MenuItem("Budweiser", "Yum-ish, sort of, like if you're into that", 4.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
             menu.Add("Kokanee", new MenuItem("Kokanee", "Not too bad", 4.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            
+
             //Premium Bottled Beer
             menu.Add("Big Rock Grasshopper", new MenuItem("Big Rock Grasshopper", "Does it contain grasshoppers? Who knows...", 5.50, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
             menu.Add("Big Rock Traditional", new MenuItem("Big Rock Traditional", "Does it contain traditions? Who knows...", 5.50, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
@@ -107,7 +107,7 @@ namespace Denu
             menu.Add("Pepsi", new MenuItem("Pepsi", "One free refill with meal purchase", 2.25, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
             menu.Add("Ginger Ale", new MenuItem("Ginger Ale", "One free refill with meal purchase", 2.25, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
             menu.Add("7-UP", new MenuItem("7-UP", "One free refill with meal purchase", 2.25, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            
+
             //Juice
             menu.Add("Cranberry", new MenuItem("Cranberry", "NO free refills", 2.25, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
             menu.Add("Orange", new MenuItem("Orange", "NO free refills", 2.25, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
@@ -206,7 +206,8 @@ namespace Denu
 
         private void confirm(object sender, RoutedEventArgs e)
         {
-            if (sureTxt.Text.Equals("Are you sure you want to checkout?")){
+            if (sureTxt.Text.Equals("Are you sure you want to checkout?"))
+            {
                 sureTxt.Text = "Your waiter will be with you shortly!";
                 yesBtn.Visibility = Visibility.Hidden;
                 noBtn.Visibility = Visibility.Hidden;
@@ -223,7 +224,20 @@ namespace Denu
                     pend.checkImg.Visibility = Visibility.Hidden;
                     pend.pendImg.Visibility = Visibility.Visible;
                 }
-                    
+
+            }
+            else if (sureTxt.Text.Equals("Are you sure you want to leave and cancel all items?"))
+            {
+                if (receiptLst.Items.Count == 0)
+                {
+                    reset(sender, e);
+                }
+                else
+                {
+                    // So they're trying to return to the home screen BUT a pending item has been added to their receipt before they could leave
+                    confirmGrd.Visibility = Visibility.Hidden;
+                    dialogGrid.Visibility = Visibility.Hidden;
+                }
             }
             else
             {
@@ -273,7 +287,7 @@ namespace Denu
         private void itemPress(object sender, MouseButtonEventArgs e)
         {
             Label itemClicked = (Label)sender;
-            selectedItem = menu[(String) itemClicked.Content];
+            selectedItem = menu[(String)itemClicked.Content];
 
 
             itemImg.Source = selectedItem.getImage();
@@ -291,10 +305,10 @@ namespace Denu
                 if (selectedItem.getName().Equals(itemAt.NameLbl.Content.ToString()))
                 {
                     String loadedLbl = itemAt.QtyLbl.Content.ToString();
-                    char[] deliminator = {'x'};
+                    char[] deliminator = { 'x' };
                     String[] words = loadedLbl.Split(deliminator);
                     qtyLbl.Content = words[words.Length - 1];
-                     addBtn.Content = "Update Order";
+                    addBtn.Content = "Update Order";
 
                     break;
                 }
@@ -308,10 +322,13 @@ namespace Denu
             if (qtyLbl.Content.Equals("1"))
             {
                 decrementBtn.IsEnabled = false;
-            } else {
+            }
+            else
+            {
                 decrementBtn.IsEnabled = true;
             }
-            if (qtyLbl.Content.Equals("99")) {
+            if (qtyLbl.Content.Equals("99"))
+            {
                 incrementBtn.IsEnabled = false;
             }
             else
@@ -387,7 +404,7 @@ namespace Denu
 
 
             String totalString = totalLbl.Content.ToString();
-            Char[] delimiter = { 'x', ' ' };
+            Char[] delimiter = { 'x', '$', ' ' };
             String[] oldWords = totalString.Split(delimiter);
             // 0: "Total:" 1: price
 
@@ -396,17 +413,19 @@ namespace Denu
             String[] newWords = item.PriceLbl.Content.ToString().Split(delimiter);
             // First item(0: "", 1: price), Next items(0: price)
 
-            Double newPrice = Double.Parse(item.PriceLbl.Content.ToString());
+
+            Double newPrice = Double.Parse(newWords[newWords.Length - 1]);
 
             String[] qtyWords = item.QtyLbl.Content.ToString().Split(delimiter);
             int qty = int.Parse(qtyWords[qtyWords.Length - 1]);
 
 
-            receiptLst.Items.Add(new receiptItem(qty + "x " + item.NameLbl.Content.ToString(), "" + (newPrice * qty)));
+            receiptLst.Items.Add(new receiptItem(qty + "x " + item.NameLbl.Content.ToString(), (newPrice * qty).ToString("C2")));
+            homeBtn.IsEnabled = false;
 
             pendLst.Items.Remove(item);
 
-            totalLbl.Content = oldPrice + (newPrice * qty);
+            totalLbl.Content = "Total: " + (oldPrice + (newPrice * qty)).ToString("C2");
 
             theRcptGrd.Visibility = Visibility.Visible;
             rcptBrd.Visibility = Visibility.Visible;
@@ -433,12 +452,32 @@ namespace Denu
             priceLbl.Content = "";
             itemLbl.Content = "";
             descTxt.Text = "";
+            homeBtn.IsEnabled = true;
+            for (int i = pendLst.Items.Count; i > 0; i--)
+            {
+                pendLst.Items.RemoveAt(0);
+            }
+            for (int i = receiptLst.Items.Count; i > 0; i--)
+            {
+                receiptLst.Items.RemoveAt(0);
+            }
+            theRcptGrd.Visibility = Visibility.Hidden;
+            rcptBrd.Visibility = Visibility.Hidden;
+            billBrd.Visibility = Visibility.Hidden;
+
+            totalLbl.Content = "Total: $0.00";
+            addBtn.IsEnabled = false;
+            incrementBtn.IsEnabled = false;
+            decrementBtn.IsEnabled = false;
+            qtyLbl.Content = "1";
+            qtyLbl.IsEnabled = false;
         }
 
         private void increment(object sender, RoutedEventArgs e)
         {
             decrementBtn.IsEnabled = true;
-            if(Convert.ToInt32(qtyLbl.Content) >= 98) {
+            if (Convert.ToInt32(qtyLbl.Content) >= 98)
+            {
                 qtyLbl.Content = "99";
                 incrementBtn.IsEnabled = false;
             }
@@ -480,7 +519,9 @@ namespace Denu
         {
             if (pendLst.Items.Count > 0)
             {
-
+                sureTxt.Text = "Are you sure you want to leave and cancel all items?";
+                confirmGrd.Visibility = Visibility.Visible;
+                dialogGrid.Visibility = Visibility.Visible;
             }
             else
             {
