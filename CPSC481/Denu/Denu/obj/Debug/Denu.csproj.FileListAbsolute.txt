@@ -89,3 +89,7 @@ C:\Users\smfbrier\Source\Repos\Pllleaase\CPSC481\Denu\Denu\obj\Debug\Denu.Proper
 C:\Users\smfbrier\Source\Repos\Pllleaase\CPSC481\Denu\Denu\obj\Debug\Denu.csproj.GenerateResource.Cache
 C:\Users\smfbrier\Source\Repos\Pllleaase\CPSC481\Denu\Denu\bin\Debug\Denu.exe
 C:\Users\smfbrier\Source\Repos\Pllleaase\CPSC481\Denu\Denu\bin\Debug\Denu.pdb
+U:\481deninterface\CPSC481\Denu\Denu\obj\Debug\pendItem.baml
+U:\481deninterface\CPSC481\Denu\Denu\obj\Debug\receiptItem.baml
+U:\481deninterface\CPSC481\Denu\Denu\obj\Debug\pendItem.g.cs
+U:\481deninterface\CPSC481\Denu\Denu\obj\Debug\receiptItem.g.cs
