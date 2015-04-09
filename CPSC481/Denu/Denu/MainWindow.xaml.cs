@@ -216,6 +216,14 @@ namespace Denu
             {
                 confirmGrd.Visibility = Visibility.Hidden;
                 dialogGrid.Visibility = Visibility.Hidden;
+
+                for (int i = 0; i < pendLst.Items.Count; i++)
+                {
+                    pendItem pend = (pendItem)pendLst.Items.GetItemAt(i);
+                    pend.checkImg.Visibility = Visibility.Hidden;
+                    pend.pendImg.Visibility = Visibility.Visible;
+                }
+                    
             }
             else
             {
@@ -402,6 +410,9 @@ namespace Denu
 
             theRcptGrd.Visibility = Visibility.Visible;
             rcptBrd.Visibility = Visibility.Visible;
+
+            // Reset the order item to be "add to order"
+            addBtn.Content = "Add to Order";
         }
 
         private void reset(object sender, RoutedEventArgs e)
@@ -462,6 +473,18 @@ namespace Denu
                 tmp.Content = item.NameLbl.Content.ToString();
 
                 itemPress(tmp, e);
+            }
+        }
+
+        private void homeClicked(object sender, RoutedEventArgs e)
+        {
+            if (pendLst.Items.Count > 0)
+            {
+
+            }
+            else
+            {
+                reset(sender, e);
             }
         }
     }
