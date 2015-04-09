@@ -80,73 +80,57 @@ namespace Denu
 
             //Food~~~~~~~~~~~~~~~~~~~~
             //Snacks
-            menu.Add("Chicken Fingers", new MenuItem("Chicken Fingers", "Served with fries and plum sauce", 9.50, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("The Den Dip Trio", new MenuItem("The Den Dip Trio", "Spinach and artichoke dip (served cold), tuscan white bean herb hummus with charred lemon and pico de gallo. Served with tortilla chips, pita chips, carrot and celery sticks", 9.00, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Nachos", new MenuItem("Nachos", "Tri-coloured tortilla chips, tomatoes, black olives, jalapeños, green onions, and mixed cheese. Served with salsa and sour cream", 14.00, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Deep Fried Breaded Agnolotti Pasta", new MenuItem("Deep Fried Breaded Agnolotti Pasta ", "8pcs filled with mozzarella cheese. Served with a tomato pesto sauce.", 10.00, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Tempura Extreme Beans", new MenuItem("Tempura Extreme Beans", "10pcs of fried spicy pickled green beans tossed in paprika and rosemary", 7.00, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Edamame Beans", new MenuItem("Edamame Beans", "Steamed and tossed in sesame ginger lime salt", 6.00, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Basket of Onion Rings", new MenuItem("Basket of Onion Rings", "Served with roasted garlic aioli", 7.00, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Basket of Rosemary French Fries", new MenuItem("Basket of Rosemary French Fries", "Delicious fries tossed in a rosemary spice", 5.00, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Chicken Fingers", new MenuItem("Chicken Fingers", "Served with fries and plum sauce", 9.50, new BitmapImage(new Uri("FoodDrink/chickenFingers.jpg", UriKind.Relative))));
+            menu.Add("The Den Dip Trio", new MenuItem("The Den Dip Trio", "Spinach and artichoke dip (served cold), tuscan white bean herb hummus with charred lemon and pico de gallo. Served with tortilla chips, pita chips, carrot and celery sticks", 9.00, new BitmapImage(new Uri("FoodDrink/artichokeDip.jpg", UriKind.Relative))));
+            menu.Add("Nachos", new MenuItem("Nachos", "Tri-coloured tortilla chips, tomatoes, black olives, jalapeños, green onions, and mixed cheese. Served with salsa and sour cream", 14.00, new BitmapImage(new Uri("FoodDrink/NachosBeef.jpg", UriKind.Relative))));
+            menu.Add("Deep Fried Breaded Agnolotti Pasta", new MenuItem("Deep Fried Breaded Agnolotti Pasta ", "8pcs filled with mozzarella cheese. Served with a tomato pesto sauce.", 10.00, new BitmapImage(new Uri("FoodDrink/friedAgnolottiPasta.jpeg", UriKind.Relative))));
+            menu.Add("Tempura Extreme Beans", new MenuItem("Tempura Extreme Beans", "10pcs of fried spicy pickled green beans tossed in paprika and rosemary", 7.00, new BitmapImage(new Uri("FoodDrink/tempuraExtremeBeans.jpg", UriKind.Relative))));
+            menu.Add("Edamame Beans", new MenuItem("Edamame Beans", "Steamed and tossed in sesame ginger lime salt", 6.00, new BitmapImage(new Uri("FoodDrink/Edamame_beans.jpg", UriKind.Relative))));
+            menu.Add("Basket of Onion Rings", new MenuItem("Basket of Onion Rings", "Served with roasted garlic aioli", 7.00, new BitmapImage(new Uri("FoodDrink/onionRings.jpg", UriKind.Relative))));
+            menu.Add("Basket of Rosemary French Fries", new MenuItem("Basket of Rosemary French Fries", "Delicious fries tossed in a rosemary spice", 5.00, new BitmapImage(new Uri("FoodDrink/rosemaryFries.jpg", UriKind.Relative))));
 
             //Poutines
-            menu.Add("Den Poutine", new MenuItem("Den Poutine", "Authentic Québec cheese curds and house-made gravy", 9.50, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("The Tub Tub Poutine", new MenuItem("The Tub Tub Poutine", "Buffalo chicken fingers, authentic Québec cheese curds, house-made gravy, ranch dressing, and green onions", 10.50, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Jalapeño Bacon Club Poutine", new MenuItem("Jalapeño Bacon Club Poutine", "Chicken finger slices, peppered bacon, pico de gallo, green onions, diced jalapeños, authentic Québec cheese curds and house-made gravy", 10.50, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Breakfast Poutine", new MenuItem("Breakfast Poutine", "Crumbled peppered bacon, sautéed onions and mushrooms, topped with a sunny side up egg and authentic Québec cheese curds with house-made gravy", 11.00, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Den Poutine", new MenuItem("Den Poutine", "Authentic Québec cheese curds and house-made gravy", 9.50, new BitmapImage(new Uri("FoodDrink/Poutine.jpg", UriKind.Relative))));
+            menu.Add("The Tub Tub Poutine", new MenuItem("The Tub Tub Poutine", "Buffalo chicken fingers, authentic Québec cheese curds, house-made gravy, ranch dressing, and green onions", 10.50, new BitmapImage(new Uri("FoodDrink/Poutine.jpg", UriKind.Relative))));
+            menu.Add("Jalapeño Bacon Club Poutine", new MenuItem("Jalapeño Bacon Club Poutine", "Chicken finger slices, peppered bacon, pico de gallo, green onions, diced jalapeños, authentic Québec cheese curds and house-made gravy", 10.50, new BitmapImage(new Uri("FoodDrink/Poutine.jpg", UriKind.Relative))));
+            menu.Add("Breakfast Poutine", new MenuItem("Breakfast Poutine", "Crumbled peppered bacon, sautéed onions and mushrooms, topped with a sunny side up egg and authentic Québec cheese curds with house-made gravy", 11.00, new BitmapImage(new Uri("FoodDrink/Poutine.jpg", UriKind.Relative))));
 
             //Burgers
-            menu.Add("Classic Cheeseburger", new MenuItem("Classic Cheeseburger", "Served on a pretzel kaiser bun with lettuce, tomato, shaved red onion, cheddar cheese, and topped with a dill pickle spear", 10.00, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Homemade Vegan BBQ Black Bean Veggie Burger ", new MenuItem("Homemade Vegan BBQ Black Bean Veggie Burger ", "Served on a pretzel kaiser bun with lettuce, tomato, shaved red onion, cheddar cheese, and topped with a dill pickle spear. With guacomole and sautéed mushrooms.", 11.00, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("The Den Burger", new MenuItem("The Den Burger", "Served on a pretzel kaiser bun with lettuce, tomato, shaved red onion, cheddar and mozzarella cheese, and topped with a dill pickle spear. With sautéed mushroom mix, and crisp bacon.", 12.25, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("California BBQ Burger", new MenuItem("California BBQ Burger", "Served on a pretzel kaiser bun with lettuce, tomato, shaved red onion, cheddar cheese, and topped with a dill pickle spear. With Jack Daniel's BBQ sauce, crisp bacon, and sliced avocado.", 12.25, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Ring O’ Fire Burger", new MenuItem("Ring O’ Fire Burger", "Served on a pretzel kaiser bun with lettuce, tomato, shaved red onion, and topped with a dill pickle spear. With Chipotle lime sauce, jalapeños, pico de gallo, and jalapeño Havarti cheese.", 12.25, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Classic Cheeseburger", new MenuItem("Classic Cheeseburger", "Served on a pretzel kaiser bun with lettuce, tomato, shaved red onion, cheddar cheese, and topped with a dill pickle spear", 10.00, new BitmapImage(new Uri("FoodDrink/burgers.jpg", UriKind.Relative))));
+            menu.Add("Homemade Vegan BBQ Black Bean Veggie Burger", new MenuItem("Homemade Vegan BBQ Black Bean Veggie Burger", "Served on a pretzel kaiser bun with lettuce, tomato, shaved red onion, cheddar cheese, and topped with a dill pickle spear. With guacomole and sautéed mushrooms.", 11.00, new BitmapImage(new Uri("FoodDrink/veggieBurger.jpg", UriKind.Relative))));
+            menu.Add("The Den Burger", new MenuItem("The Den Burger", "Served on a pretzel kaiser bun with lettuce, tomato, shaved red onion, cheddar and mozzarella cheese, and topped with a dill pickle spear. With sautéed mushroom mix, and crisp bacon.", 12.25, new BitmapImage(new Uri("FoodDrink/burgers.jpg", UriKind.Relative))));
+            menu.Add("California BBQ Burger", new MenuItem("California BBQ Burger", "Served on a pretzel kaiser bun with lettuce, tomato, shaved red onion, cheddar cheese, and topped with a dill pickle spear. With Jack Daniel's BBQ sauce, crisp bacon, and sliced avocado.", 12.25, new BitmapImage(new Uri("FoodDrink/burgers.jpg", UriKind.Relative))));
+            menu.Add("Ring O’ Fire Burger", new MenuItem("Ring O’ Fire Burger", "Served on a pretzel kaiser bun with lettuce, tomato, shaved red onion, and topped with a dill pickle spear. With Chipotle lime sauce, jalapeños, pico de gallo, and jalapeño Havarti cheese.", 12.25, new BitmapImage(new Uri("FoodDrink/burgers.jpg", UriKind.Relative))));
 
             //Sandwiches etc.
-            menu.Add("Buffalo Chicken Wrap", new MenuItem("Buffalo Chicken Wrap", "Buffalo chicken fingers, lettuce, tomato, and ranch sauce in a tomato tortilla", 10.25, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Sirloin Steak Sandwich", new MenuItem("Sirloin Steak Sandwich", "On garlic ciabatta bread with caramelized onions and sautéed mushrooms", 12.50, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Avocado Chicken Club", new MenuItem("Avocado Chicken Club", "Adobo grilled chicken breast, roasted garlic mayo, leaf lettuce, sliced tomato, sliced avocado, and smoky bacon on toasted ciabatta bread", 12.00, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("BBQ Chicken Club", new MenuItem("BBQ Chicken Club", "Grilled chicken breast, smoky bacon, lettuce, tomato, roasted garlic mayo, and Jack Daniel’s BBQ sauce on a toasted pretzel bun", 10.25, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Cuban Flank Steak Beef Dip", new MenuItem("Cuban Flank Steak Beef Dip", "Roasted jalapeño mojo marinated beef flank steak, honey sage aioli, caramelized onions and mushrooms, and swiss cheese on a toasted sweet potato roll, served with au jus", 12.00, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Crispy Quinoa & Red Lentil Wrap", new MenuItem("Crispy Quinoa & Red Lentil Wrap", "Tuscan white bean hummus, Sriracha lentils, mixed mushrooms, panko crumbs, onions, guacamole, roasted red pepper, pico de gallo, and lettuce on a whole wheat wrap", 9.50, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Fish & Chips", new MenuItem("Fish & Chips", "8oz battered haddock, fried until golden brown. Served with fries, apple cider vinegar marinated coleslaw, roasted jalapeño, and charred lemon tartar sauce", 13.00, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Butter Chicken", new MenuItem("Butter Chicken", "Chicken breast simmered in a creamy tomato, cashew and fenugreek sauce. Served with naan bread and basmati rice", 13.00, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Monterrey Fish Taco", new MenuItem("Monterrey Fish Taco", "Roasted poblano salsa verde, seared Mahi Mahi, grilled pineapple cilantro salsa, and apple cider vinegar marinated coleslaw", 11.00, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Carne Asada Taco", new MenuItem("Carne Asada Taco", "Roasted jalapeño mojo marinated beef flank steak, guacamole, pico de gallo, and apple cider vinegar marinated coleslaw", 11.00, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Pollo Tinga Taco", new MenuItem("Pollo Tinga Taco", "ho pepper braised pulled chicken breast, guacamole, grilled pineapple cilantro salsa, and apple cider vinegar marinated coleslaw. ", 11.00, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Grilled Vegetable Pappardelle Pasta", new MenuItem("Grilled Vegetable Pappardelle Pasta", "Grilled eggplant, zucchini, red onion, red peppers, and sautéed mushrooms in a fire roasted marinara sauce", 12.00, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Carbonara Pappardelle", new MenuItem("Carbonara Pappardelle", "Grilled eggplant, zucchini, red onion, red peppers, and sautéed mushrooms with a house made pancetta in a cream sauce", 13.00, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Ancho Chicken Pappardelle", new MenuItem("Ancho Chicken Pappardelle", "In house made pulled ancho marinated chicken, grilled eggplant, zucchini, red onion, red peppers, and sautéed mushrooms in a fire roasted marinara sauce", 13.00, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-
-            //Extras
-            menu.Add("Garlic Toast", new MenuItem("Garlic Toast", "Garlic!", 1.75, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Cheese Toast", new MenuItem("Cheese Toast", "Mmm, cheesy!", 3.00, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Gravy", new MenuItem("Gravy", "Would you like some meal with that gravy?", 2.00, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Sour Cream", new MenuItem("Sour Cream", "For your potatoes, or whatever", 1.50, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Salsa", new MenuItem("Salsa", "Salsa!", 1.50, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Guacomole", new MenuItem("Guacomole", "Gwhack-a-mole", 2.50, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Jalapeños", new MenuItem("Jalapeños", "Spicy!", 1.00, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-
-            //Desserts
-            menu.Add("Lime Tart", new MenuItem("Lime Tart", "Smooth lime curd with toasted coconut whipped cream", 6.50, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Molten Turtle Cake", new MenuItem("Molten Turtle Cake", "Warm dark chocolate cake with a caramel centre,toasted pecans and toasted coconut whipped cream", 6.50, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Buffalo Chicken Wrap", new MenuItem("Buffalo Chicken Wrap", "Buffalo chicken fingers, lettuce, tomato, and ranch sauce in a tomato tortilla", 10.25, new BitmapImage(new Uri("FoodDrink/Buffalo-Chicken-wrap.jpg", UriKind.Relative))));
+            menu.Add("Sirloin Steak Sandwich", new MenuItem("Sirloin Steak Sandwich", "On garlic ciabatta bread with caramelized onions and sautéed mushrooms", 12.50, new BitmapImage(new Uri("FoodDrink/sandwichSteak.jpg", UriKind.Relative))));
+            menu.Add("Avocado Chicken Club", new MenuItem("Avocado Chicken Club", "Adobo grilled chicken breast, roasted garlic mayo, leaf lettuce, sliced tomato, sliced avocado, and smoky bacon on toasted ciabatta bread", 12.00, new BitmapImage(new Uri("FoodDrink/avocadoChickenClub.jpg", UriKind.Relative))));
+            menu.Add("BBQ Chicken Club", new MenuItem("BBQ Chicken Club", "Grilled chicken breast, smoky bacon, lettuce, tomato, roasted garlic mayo, and Jack Daniel’s BBQ sauce on a toasted pretzel bun", 10.25, new BitmapImage(new Uri("FoodDrink/bbqChickenClub.jpg", UriKind.Relative))));
+            menu.Add("Cuban Flank Steak Beef Dip", new MenuItem("Cuban Flank Steak Beef Dip", "Roasted jalapeño mojo marinated beef flank steak, honey sage aioli, caramelized onions and mushrooms, and swiss cheese on a toasted sweet potato roll, served with au jus", 12.00, new BitmapImage(new Uri("FoodDrink/beefDip.jpg", UriKind.Relative))));
+            menu.Add("Crispy Quinoa & Red Lentil Wrap", new MenuItem("Crispy Quinoa & Red Lentil Wrap", "Tuscan white bean hummus, Sriracha lentils, mixed mushrooms, panko crumbs, onions, guacamole, roasted red pepper, pico de gallo, and lettuce on a whole wheat wrap", 9.50, new BitmapImage(new Uri("FoodDrink/quinoaLentilWrap.jpg", UriKind.Relative))));
+            menu.Add("Fish & Chips", new MenuItem("Fish & Chips", "8oz battered haddock, fried until golden brown. Served with fries, apple cider vinegar marinated coleslaw, roasted jalapeño, and charred lemon tartar sauce", 13.00, new BitmapImage(new Uri("FoodDrink/FishandChips.jpg", UriKind.Relative))));
+            menu.Add("Butter Chicken", new MenuItem("Butter Chicken", "Chicken breast simmered in a creamy tomato, cashew and fenugreek sauce. Served with naan bread and basmati rice", 13.00, new BitmapImage(new Uri("FoodDrink/butterChicken.jpg", UriKind.Relative))));
+            menu.Add("Monterrey Fish Taco", new MenuItem("Monterrey Fish Taco", "Roasted poblano salsa verde, seared Mahi Mahi, grilled pineapple cilantro salsa, and apple cider vinegar marinated coleslaw", 11.00, new BitmapImage(new Uri("FoodDrink/tacos.jpg", UriKind.Relative))));
+            menu.Add("Carne Asada Taco", new MenuItem("Carne Asada Taco", "Roasted jalapeño mojo marinated beef flank steak, guacamole, pico de gallo, and apple cider vinegar marinated coleslaw", 11.00, new BitmapImage(new Uri("FoodDrink/tacos.jpg", UriKind.Relative))));
+            menu.Add("Pollo Tinga Taco", new MenuItem("Pollo Tinga Taco", "ho pepper braised pulled chicken breast, guacamole, grilled pineapple cilantro salsa, and apple cider vinegar marinated coleslaw. ", 11.00, new BitmapImage(new Uri("FoodDrink/tacos.jpg", UriKind.Relative))));
+            menu.Add("Grilled Vegetable Pappardelle Pasta", new MenuItem("Grilled Vegetable Pappardelle Pasta", "Grilled eggplant, zucchini, red onion, red peppers, and sautéed mushrooms in a fire roasted marinara sauce", 12.00, new BitmapImage(new Uri("FoodDrink/veggiePapperdellePasa.jpg", UriKind.Relative))));
+            menu.Add("Carbonara Pappardelle", new MenuItem("Carbonara Pappardelle", "Grilled eggplant, zucchini, red onion, red peppers, and sautéed mushrooms with a house made pancetta in a cream sauce", 13.00, new BitmapImage(new Uri("FoodDrink/pappardelleCarb.jpg", UriKind.Relative))));
+            menu.Add("Ancho Chicken Pappardelle", new MenuItem("Ancho Chicken Pappardelle", "In house made pulled ancho marinated chicken, grilled eggplant, zucchini, red onion, red peppers, and sautéed mushrooms in a fire roasted marinara sauce", 13.00, new BitmapImage(new Uri("FoodDrink/chicken-pappardelle.jpg", UriKind.Relative))));
 
             //Salads
-            menu.Add("House Salad", new MenuItem("House Salad", "Baby organic greens, cucumber, grape tomatoes, carrot, and crispy quinoa with Italian dressing", 4.25, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Caesar Salad", new MenuItem("Caesar Salad", "Romaine lettuce, creamy garlic dressing, croutons, and Parmesan cheese", 4.25, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Cobb Salad", new MenuItem("Cobb Salad", "Grilled chicken breast strips, peppered bacon, sliced boiled egg, garlic Boursin cheese, avocado, and grape tomatoes with herb ranch dressing", 10.50, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Romaine Wedge Salad", new MenuItem("Romaine Wedge Salad", "Artisan baby romaine half, house-made pancetta, garlic Boursin cheese, roasted red peppers, grape tomatoes, and polenta crisps with herb ranch dressing", 10.50, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Chicken Taco Salad", new MenuItem("Chicken Taco Salad", "Red peppers, cucumber, chipotle lime chicken, Pico de Gallo, and shredded cheese. Served in a tomato tortilla bowl with cilantro black bean vinaigrette", 10.50, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Greek Salad", new MenuItem("Greek Salad", "Cucumber, grape tomatoes, sweet peppers, Feta cheese, and lemon oregano vinaigrette on a bed of romaine lettuce", 10.00, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("House Salad", new MenuItem("House Salad", "Baby organic greens, cucumber, grape tomatoes, carrot, and crispy quinoa with Italian dressing", 4.25, new BitmapImage(new Uri("FoodDrink/houseSalad.jpg", UriKind.Relative))));
+            menu.Add("Caesar Salad", new MenuItem("Caesar Salad", "Romaine lettuce, creamy garlic dressing, croutons, and Parmesan cheese", 4.25, new BitmapImage(new Uri("FoodDrink/caesar-salad.jpg", UriKind.Relative))));
+            menu.Add("Cobb Salad", new MenuItem("Cobb Salad", "Grilled chicken breast strips, peppered bacon, sliced boiled egg, garlic Boursin cheese, avocado, and grape tomatoes with herb ranch dressing", 10.50, new BitmapImage(new Uri("FoodDrink/cobb-salad.jpg", UriKind.Relative))));
+            menu.Add("Romaine Wedge Salad", new MenuItem("Romaine Wedge Salad", "Artisan baby romaine half, house-made pancetta, garlic Boursin cheese, roasted red peppers, grape tomatoes, and polenta crisps with herb ranch dressing", 10.50, new BitmapImage(new Uri("FoodDrink/romaineWedgeSalad.jpg", UriKind.Relative))));
+            menu.Add("Chicken Taco Salad", new MenuItem("Chicken Taco Salad", "Red peppers, cucumber, chipotle lime chicken, Pico de Gallo, and shredded cheese. Served in a tomato tortilla bowl with cilantro black bean vinaigrette", 10.50, new BitmapImage(new Uri("FoodDrink/tacosalad.jpg", UriKind.Relative))));
+            menu.Add("Greek Salad", new MenuItem("Greek Salad", "Cucumber, grape tomatoes, sweet peppers, Feta cheese, and lemon oregano vinaigrette on a bed of romaine lettuce", 10.00, new BitmapImage(new Uri("FoodDrink/greek-salad.jpg", UriKind.Relative))));
 
             //Pizza
-            menu.Add("Classic Pepperoni 8\"", new MenuItem("Classic Pepperoni 8\"", "Pepperoni, tomato sauce, and mozzarella", 10.00, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Meat Supreme 8\"", new MenuItem("Meat Supreme 8\"", "Honey ham, bacon, pepperoni, tomato sauce, and mozzarella cheese", 10.00, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Hawaiian", new MenuItem("Hawaiian", "Honey ham, pineapple, tomato sauce, and mozzarella cheese", 10.00, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Four Cheese", new MenuItem("Four Cheese", "Parmesan, cheddar, mozzarella, and feta", 10.00, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Grilled Vegetable", new MenuItem("Grilled Vegetable", "Grilled portobello mushroom, peppers, red onion, zucchini, black olives, and feta cheese", 10.00, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Taco", new MenuItem("Taco", "Pizza sauce, salsa, peppers, red onion, and taco beef", 10.00, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
-            menu.Add("Chicken Carbonara", new MenuItem("Chicken Carbonara", "Grilled chicken, bacon, diced tomato, alfredo sauce, and mozzarella cheese", 10.00, new BitmapImage(new Uri("FoodDrink/gin-and-tonic.jpg", UriKind.Relative))));
+            menu.Add("Classic Pepperoni", new MenuItem("Classic Pepperoni 8\"", "Pepperoni, tomato sauce, and mozzarella", 10.00, new BitmapImage(new Uri("FoodDrink/pepPizza.jpg", UriKind.Relative))));
+            menu.Add("Meat Supreme", new MenuItem("Meat Supreme 8\"", "Honey ham, bacon, pepperoni, tomato sauce, and mozzarella cheese", 10.00, new BitmapImage(new Uri("FoodDrink/meat-lovers.jpg", UriKind.Relative))));
+            menu.Add("Grilled Vegetable", new MenuItem("Grilled Vegetable 8\"", "Grilled portobello mushroom, peppers, red onion, zucchini, black olives, and feta cheese", 10.00, new BitmapImage(new Uri("FoodDrink/Grilled_Vegetable_Pizza.jpg", UriKind.Relative))));
+            menu.Add("Taco", new MenuItem("Taco 8\"", "Pizza sauce, salsa, peppers, red onion, and taco beef", 10.00, new BitmapImage(new Uri("FoodDrink/taco-pizza.jpg", UriKind.Relative))));
         }
 
         private void begin(object sender, RoutedEventArgs e)
@@ -220,14 +204,14 @@ namespace Denu
 
         private void foodMenu(object sender, RoutedEventArgs e)
         {
-            drinkGrd.Visibility = Visibility.Hidden;
-            foodGrd.Visibility = Visibility.Visible;
+            drinkMenuScroll.Visibility = Visibility.Hidden;
+            foodMenuScroll.Visibility = Visibility.Visible;
         }
 
         private void drinkMenu(object sender, RoutedEventArgs e)
         {
-            foodGrd.Visibility = Visibility.Hidden;
-            drinkGrd.Visibility = Visibility.Visible;
+            foodMenuScroll.Visibility = Visibility.Hidden;
+            drinkMenuScroll.Visibility = Visibility.Visible;
         }
 
         private void confirmAll(object sender, RoutedEventArgs e)
@@ -252,6 +236,7 @@ namespace Denu
             Label itemClicked = (Label)sender;
             selectedItem = menu[(String)itemClicked.Content];
 
+            imageBrd.Visibility = Visibility.Visible;
 
             itemImg.Source = selectedItem.getImage();
             descTxt.Text = selectedItem.getDesc();
@@ -399,23 +384,28 @@ namespace Denu
 
         private void reset(object sender, RoutedEventArgs e)
         {
+            //Show welcome
+            welcomeGrd.Visibility = Visibility.Visible;
+
+            //Reset dialog
             confirmGrd.Visibility = Visibility.Hidden;
             dialogGrid.Visibility = Visibility.Hidden;
             okBtn.Visibility = Visibility.Hidden;
             yesBtn.Visibility = Visibility.Visible;
             noBtn.Visibility = Visibility.Visible;
 
-            foodGrd.Visibility = Visibility.Hidden;
-            drinkGrd.Visibility = Visibility.Visible;
-
-            billGrd.Visibility = Visibility.Hidden;
-            welcomeGrd.Visibility = Visibility.Visible;
-
-            itemImg.Source = null;
-            priceLbl.Content = "";
-            itemLbl.Content = "";
-            descTxt.Text = "";
+            //Reset menu
+            foodMenuScroll.Visibility = Visibility.Hidden;
+            drinkMenuScroll.Visibility = Visibility.Visible;
             homeBtn.IsEnabled = true;
+
+            //Reset bill
+            billGrd.Visibility = Visibility.Hidden;
+            theRcptGrd.Visibility = Visibility.Hidden;
+            rcptBrd.Visibility = Visibility.Hidden;
+            billBrd.Visibility = Visibility.Hidden;
+            totalLbl.Content = "Total: $0.00";
+
             for (int i = pendLst.Items.Count; i > 0; i--)
             {
                 pendLst.Items.RemoveAt(0);
@@ -424,11 +414,12 @@ namespace Denu
             {
                 receiptLst.Items.RemoveAt(0);
             }
-            theRcptGrd.Visibility = Visibility.Hidden;
-            rcptBrd.Visibility = Visibility.Hidden;
-            billBrd.Visibility = Visibility.Hidden;
 
-            totalLbl.Content = "Total: $0.00";
+            //Reset description
+            itemImg.Source = null;
+            priceLbl.Content = "";
+            itemLbl.Content = "";
+            descTxt.Text = "";
             addBtn.IsEnabled = false;
             incrementBtn.IsEnabled = false;
             decrementBtn.IsEnabled = false;
