@@ -21,7 +21,7 @@
                 <RowDefinition x:Name="billSplit" Height="540"/>
             </Grid.RowDefinitions>
             <Grid x:Name="thePendGrd" Height="512" VerticalAlignment="Top" Background="#CCFFFFFF" Grid.RowSpan="2">
-                <ListView x:Name="pendLst" Height="382" Margin="0,80,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Hidden" MouseLeftButtonUp="pendItemClicked" Background="{x:Null}" BorderThickness="0" FontFamily="Cambria" IsHitTestVisible="True" Foreground="{x:Null}">
+                <ListView x:Name="pendLst" Height="382" Margin="0,55,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Hidden" MouseLeftButtonUp="pendItemClicked" Background="{x:Null}" BorderThickness="0" FontFamily="Cambria" IsHitTestVisible="True" Foreground="{x:Null}">
                     <ListView.View>
                         <GridView>
                             <GridViewColumn/>
